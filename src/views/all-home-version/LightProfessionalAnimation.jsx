@@ -12,8 +12,7 @@ import Footer from "../../components/footer/Footer";
 import useDocumentTitle from "../../components/useDocumentTitle";
 
 const HomeLightSidebarTwo = () => {
-  useDocumentTitle("Rodrigo Palma || Portfolio || Cientista/Analista de Dados"
-  );
+  useDocumentTitle("Rodrigo Palma || Portfolio || Cientista/Analista de Dados");
   document.body.classList.add("theme-light");
   return (
     <div className="main-left">
