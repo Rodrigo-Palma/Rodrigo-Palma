@@ -31,7 +31,7 @@ const HomeLightRtlAnimation = () => {
       <section id="work" className="section theme-light dark-bg">
         <div className="container">
           <div className="title">
-            <h3>My Portfolio.</h3>
+            <h3>Meus Projetos.</h3>
           </div>
           <Portfolio />
         </div>
