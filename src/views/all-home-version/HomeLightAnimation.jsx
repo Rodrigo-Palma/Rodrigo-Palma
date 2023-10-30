@@ -13,7 +13,7 @@ import useDocumentTitle from "../../components/useDocumentTitle";
 
 const HomeOne = () => {
   useDocumentTitle(
-    "Nairo || Theme Light Animation React Personal Portfolio Template"
+    "Rodrigo Palma || Portfolio || Cientista/Analista de Dados"
   );
   document.body.classList.add("theme-light");
   return (

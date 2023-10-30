@@ -11,7 +11,7 @@ const sliderContent = {
   description: `Especializado em análise de dados, modelagem estatística, aprendizado de máquina, inteligência artificial e big data.
   Também presto consultoria financeira, com otimização de portfólio, análise de riscos, investimentos em renda variável e criptomoedas, 
   com foco na criação de renda passiva e liberdade financeira.`,
-  btnText: " Donwload CV",
+  btnText: " Download CV",
 };
 
 const Slider = () => {

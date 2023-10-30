@@ -13,7 +13,7 @@ import useDocumentTitle from "../../components/useDocumentTitle";
 
 const HomeOne = () => {
   useDocumentTitle(
-    "Rodrigo Palma || Portfolio ||"
+    "Rodrigo Palma || Portfolio || Cientista/Analista de Dados"
   );
   return (
     <div className="main-left theme-dark">
