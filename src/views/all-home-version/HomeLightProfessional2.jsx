@@ -41,7 +41,7 @@ const HomeLightSidebarTwo = () => {
       <section id="blog" className="section">
         <div className="container">
           <div className="title">
-            <h3>Latest Blog.</h3>
+            <h3>Artigos.</h3>
           </div>
           <Blog />
         </div>
@@ -58,7 +58,7 @@ const HomeLightSidebarTwo = () => {
 
             <div className="col-lg-7 ml-auto m-15px-tb  ">
               <div className="contact-form">
-                <h4>Say Something</h4>
+                <h4>Deixe Sua Mensagem</h4>
                 <Contact />
               </div>
             </div>
