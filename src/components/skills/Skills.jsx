@@ -4,48 +4,53 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const skillContent = [
   {
-    name: "Python/R",
-    numberPercent: "90",
+    name: "● Ciência de Dados ● Análise de Dados",
+    numberPercent: "95",
     startCount: "0",
-    endCount: "90",
+    endCount: "95",
   },
   {
-    name: "Machine Learning/Deep Learning",
-    numberPercent: "85",
+    name: "● Inteligência Artificial (IA) ● Aprendizado de Máquina ● Aprendizado Profundo",
+    numberPercent: "92",
     startCount: "0",
-    endCount: "85",
+    endCount: "92",
   },
   {
-    name: "Power BI - Tableau",
-    numberPercent: "85",
+    name: "● Programação (Python, R, SQL, NoSQL, Javascript)",
+    numberPercent: "89",
     startCount: "0",
-    endCount: "85",
+    endCount: "89",
   },
   {
-    name: "SQL",
-    numberPercent: "85",
+    name: "● Visualização de Dados ● Power BI ● Tableau",
+    numberPercent: "93",
     startCount: "0",
-    endCount: "85",
+    endCount: "93",
   },
   {
-    name: "Data Visualization",
-    numberPercent: "90",
+    name: "● Big Data ● Hadoop ● Spark",
+    numberPercent: "92",
     startCount: "0",
-    endCount: "90",
+    endCount: "92",
   },
   {
-    name: "Excel",
-    numberPercent: "80",
+    name: "● Resolução de Problemas",
+    numberPercent: "92",
     startCount: "0",
-    endCount: "80",
+    endCount: "92",
   },
   {
-    name: "Cloud Computing",
-    numberPercent: "85",
+    name: "● Mercado Financeiro ● Renda Variável ● Renda Fixa ● Derivativos ● Criptomoedas",
+    numberPercent: "93",
     startCount: "0",
-    endCount: "85",
+    endCount: "93",
   },
-
+  {
+    name: "● Clouding ● AWS ● Azure",
+    numberPercent: "86",
+    startCount: "0",
+    endCount: "86",
+  },
 ];
 
 const Skills = () => {
@@ -74,7 +79,7 @@ const Skills = () => {
                     <span ref={countUpRef} />
                   </VisibilitySensor>
                 )}
-                  </CountUp> 
+                  </CountUp>
               }
             </span>
             <div className="skill-bar">

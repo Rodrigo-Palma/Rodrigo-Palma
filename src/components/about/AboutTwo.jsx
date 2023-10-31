@@ -33,7 +33,7 @@ const AboutTwo = () => {
             <div className="col-lg-7 ml-auto">
               <div className="about-info">
                 <div className="title">
-                  <h3>Biografia</h3>
+                  <h3>Sobre Mim</h3>
                 </div>
                 <div className="about-text">
                   <p>
