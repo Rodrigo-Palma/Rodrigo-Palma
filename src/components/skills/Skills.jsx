@@ -47,9 +47,9 @@ const skillContent = [
   },
   {
     name: "● Clouding ● AWS ● Azure",
-    numberPercent: "86",
+    numberPercent: "88",
     startCount: "0",
-    endCount: "86",
+    endCount: "88",
   },
 ];
 
