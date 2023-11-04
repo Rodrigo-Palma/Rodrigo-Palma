@@ -34,7 +34,7 @@ const tabListContent = [
         subTitle: "Nuna ios App",
         alterText: "Illustration",
         portfolioLink:
-          "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-3.jpg",
@@ -44,7 +44,7 @@ const tabListContent = [
         subTitle: "Themeforest Marke",
         alterText: "Business Mockup",
         portfolioLink:
-          "https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-4.jpg",
@@ -54,7 +54,7 @@ const tabListContent = [
         subTitle: "Graphicriver Market",
         alterText: "E-Cosmetics",
         portfolioLink:
-          "https://dribbble.com/shots/16545341-Imroz-Vue-JS-Creative-Agency-Portfolio-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-5.jpg",
@@ -64,7 +64,7 @@ const tabListContent = [
         subTitle: "Codecanyon Market",
         alterText: "Bottle Illustration",
         portfolioLink:
-          "https://dribbble.com/shots/16529158-Waxon-Personal-Portfolio-VueJS-Template-RTL",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-6.jpg",
@@ -74,7 +74,7 @@ const tabListContent = [
         subTitle: "Behance Shot",
         alterText: "Web Application",
         portfolioLink:
-          "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-7.jpg",
@@ -84,7 +84,7 @@ const tabListContent = [
         subTitle: "Graphicriver Market",
         alterText: "Business Card",
         portfolioLink:
-          "https://dribbble.com/shots/16529282-Shane-Personal-Portfolio-React-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-8.jpg",
@@ -94,7 +94,7 @@ const tabListContent = [
         subTitle: "Codecanyon Market",
         alterText: "Chatting App Design",
         portfolioLink:
-          "https://www.behance.net/gallery/128278341/Imroz-Vue-JS-Creative-Agency-Portfolio-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-9.jpg",
@@ -103,7 +103,7 @@ const tabListContent = [
         title: "Web Motion",
         subTitle: "Behance Shot",
         alterText: "Web Motion",
-        portfolioLink: "https://www.facebook.com/ibthemes",
+        portfolioLink: "",
       },
     ],
   },
@@ -127,7 +127,7 @@ const tabListContent = [
         subTitle: "Themeforest Marke",
         alterText: "Business Mockup",
         portfolioLink:
-          "https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-8.jpg",
@@ -137,7 +137,7 @@ const tabListContent = [
         subTitle: "Codecanyon Market",
         alterText: "Chatting App Design",
         portfolioLink:
-          "https://www.behance.net/gallery/128278341/Imroz-Vue-JS-Creative-Agency-Portfolio-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-4.jpg",
@@ -147,7 +147,7 @@ const tabListContent = [
         subTitle: "Graphicriver Market",
         alterText: "E-Cosmetics",
         portfolioLink:
-          "https://dribbble.com/shots/16545341-Imroz-Vue-JS-Creative-Agency-Portfolio-Template",
+          "",
       },
     ],
   },
@@ -161,7 +161,7 @@ const tabListContent = [
         subTitle: "Nuna ios App",
         alterText: "Illustration",
         portfolioLink:
-          "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
+          "",
       },
 
       {
@@ -172,7 +172,7 @@ const tabListContent = [
         subTitle: "Codecanyon Market",
         alterText: "Bottle Illustration",
         portfolioLink:
-          "https://dribbble.com/shots/16529158-Waxon-Personal-Portfolio-VueJS-Template-RTL",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-6.jpg",
@@ -182,7 +182,7 @@ const tabListContent = [
         subTitle: "Behance Shot",
         alterText: "Web Application",
         portfolioLink:
-          "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
+          "",
       },
     ],
   },
@@ -196,7 +196,7 @@ const tabListContent = [
         subTitle: "Figma Shoot",
         alterText: "Bottle Illustration",
         portfolioLink:
-          "https://dribbble.com/shots/16529339-Beny-Personal-Portfolio-React-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-7.jpg",
@@ -206,7 +206,7 @@ const tabListContent = [
         subTitle: "Graphicriver Market",
         alterText: "Business Card",
         portfolioLink:
-          "https://dribbble.com/shots/16529282-Shane-Personal-Portfolio-React-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-9.jpg",
@@ -215,7 +215,7 @@ const tabListContent = [
         title: "Web Motion",
         subTitle: "Behance Shot",
         alterText: "Web Motion",
-        portfolioLink: "https://www.facebook.com/ibthemes",
+        portfolioLink: "",
       },
     ],
   },
@@ -229,7 +229,7 @@ const tabListContent = [
         subTitle: "Nuna ios App",
         alterText: "Illustration",
         portfolioLink:
-          "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-3.jpg",
@@ -239,7 +239,7 @@ const tabListContent = [
         subTitle: "Themeforest Marke",
         alterText: "Business Mockup",
         portfolioLink:
-          "https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template",
+          "",
       },
 
       {
@@ -250,7 +250,7 @@ const tabListContent = [
         subTitle: "Codecanyon Market",
         alterText: "Bottle Illustration",
         portfolioLink:
-          "https://dribbble.com/shots/16529158-Waxon-Personal-Portfolio-VueJS-Template-RTL",
+          "",
       },
       {
         img: "/img/portfolio/m-portfolio-6.jpg",
@@ -260,7 +260,7 @@ const tabListContent = [
         subTitle: "Behance Shot",
         alterText: "Web Application",
         portfolioLink:
-          "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
+          "",
       },
     ],
   },

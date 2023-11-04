@@ -43,11 +43,11 @@ const educatonContent = [
     degreeTitle: "Mestrado - Big Data e Business Intelligence",
     instituteName: "ENEB - Escola de Negócios Europeia de Barcelona",
   },
-  /*{
+  {
     passingYear: "2022-2022",
     degreeTitle: "Pós-graduação Lato Sensu - Especialização - Big Data e Ciência de Dados",
     instituteName: "Faculdade Única",
-  },*/
+  },
   {
     passingYear: "2022-2023",
     degreeTitle: "Pós-graduação Lato Sensu - MBA - Tecnologia para Negócios: Inteligência Artificial (IA), Data Science e Big Data",
