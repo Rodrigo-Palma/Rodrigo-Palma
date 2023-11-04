@@ -12,19 +12,19 @@ const breakpointColumnsObj = {
   500: 1,
 };
 
-const tabList = ["All", "Branding", "Photography", "Fashion", "Product"];
+const tabList = ["Todos", "Ciência/Análise de Dados", "Dashboard/Relatórios", "Big Data", "Finanças"];
 const tabListContent = [
   {
     porftoliItems: [
       {
-        img: "/img/portfolio/m-portfolio-1.jpg",
+        img: "/img/portfolio/m-proj-1.jpg",
         width: 400,
         height: 550,
-        title: "Bottle Illustration",
-        subTitle: "Figma Shoot",
-        alterText: "Bottle Illustration",
+        title: "Projeto: Detecção de Fraudes",
+        subTitle: "Em Cartões de Crédito",
+        alterText: "Ciência de Dados",
         portfolioLink:
-          "https://dribbble.com/shots/16529339-Beny-Personal-Portfolio-React-Template",
+          "https://github.com/Rodrigo-Palma/Proj_Fraudes_Cartao_Credito/",
       },
       {
         img: "/img/portfolio/m-portfolio-2.jpg",
@@ -110,14 +110,14 @@ const tabListContent = [
   {
     porftoliItems: [
       {
-        img: "/img/portfolio/m-portfolio-6.jpg",
+        img: "/img/portfolio/m-proj-1.jpg",
         width: 400,
         height: 550,
-        title: "Web Application",
-        subTitle: "Behance Shot",
-        alterText: "Web Application",
+        title: "Projeto: Detecção de Fraudes",
+        subTitle: "Em Cartões de Crédito",
+        alterText: "Ciência de Dados",
         portfolioLink:
-          "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
+          "https://github.com/Rodrigo-Palma/Proj_Fraudes_Cartao_Credito/",
       },
       {
         img: "/img/portfolio/m-portfolio-3.jpg",
