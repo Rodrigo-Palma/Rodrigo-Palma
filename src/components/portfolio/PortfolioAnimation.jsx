@@ -50,15 +50,15 @@ const tabListContent = [
           "",
       },
       {
-        img: "/img/portfolio/m-portfolio-4.jpg",
+        img: "/img/portfolio/m-proj-4.jpg",
         width: 400,
         height: 400,
-        title: "Business Card",
-        subTitle: "Graphicriver Market",
-        alterText: "E-Cosmetics",
+        title: "Engenharia de Atributos Financeiros 📈:",
+        subTitle: "Potencializando Previsões com Dados Temporais",
+        alterText: "Finanças",
         delayAnimation: "0",
         portfolioLink:
-          "",
+          "https://github.com/Rodrigo-Palma/Proj-Engenharia-de-Atributos-Financeiros",
       },
       {
         img: "/img/portfolio/m-portfolio-5.jpg",
@@ -241,15 +241,15 @@ const tabListContent = [
   {
     porftoliItems: [
       {
-        img: "/img/portfolio/m-portfolio-2.jpg",
+        img: "/img/portfolio/m-proj-4.jpg",
         width: 400,
         height: 400,
-        title: "E-Learning App",
-        subTitle: "Nuna ios App",
-        alterText: "Illustration",
-        delayAnimation: "",
+        title: "Engenharia de Atributos Financeiros 📈:",
+        subTitle: "Potencializando Previsões com Dados Temporais",
+        alterText: "Finanças",
+        delayAnimation: "0",
         portfolioLink:
-          "",
+          "https://github.com/Rodrigo-Palma/Proj-Engenharia-de-Atributos-Financeiros",
       },
       {
         img: "/img/portfolio/m-portfolio-3.jpg",
