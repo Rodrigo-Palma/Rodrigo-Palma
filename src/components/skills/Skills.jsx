@@ -23,13 +23,13 @@ const skillContent = [
   },
   {
     name: "● Visualização de Dados ● Power BI ● Tableau",
-    numberPercent: "93",
+    numberPercent: "95",
     startCount: "0",
     endCount: "93",
   },
   {
-    name: "● Big Data ● Hadoop ● Spark",
-    numberPercent: "92",
+    name: "● Big Data ● Hadoop ● Spark ● Databricks",
+    numberPercent: "90",
     startCount: "0",
     endCount: "92",
   },

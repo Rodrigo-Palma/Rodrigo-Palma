@@ -27,14 +27,14 @@ const tabListContent = [
           "https://github.com/Rodrigo-Palma/Proj_Fraudes_Cartao_Credito/",
       },
       {
-        img: "/img/portfolio/m-portfolio-2.jpg",
+        img: "/img/portfolio/m-proj-2.jpg",
         width: 400,
         height: 400,
-        title: "E-Learning App",
-        subTitle: "Nuna ios App",
-        alterText: "Illustration",
+        title: "Projeto: Dashboard de Análise de Vendas",
+        subTitle: "em Power BI",
+        alterText: "Dashboard",
         portfolioLink:
-          "",
+          "https://app.powerbi.com/view?r=eyJrIjoiMzYyMWY2ODktNGMzMi00M2E0LThkNTgtODZjYWRlY2RmOTA0IiwidCI6IjljODBmZWU3LTVlMWQtNDNmNy04YjViLTdkNGI0ZjU4MWEzOCJ9",
       },
       {
         img: "/img/portfolio/m-portfolio-3.jpg",
@@ -154,14 +154,14 @@ const tabListContent = [
   {
     porftoliItems: [
       {
-        img: "/img/portfolio/m-portfolio-2.jpg",
+        img: "/img/portfolio/m-proj-2.jpg",
         width: 400,
         height: 400,
-        title: "E-Learning App",
-        subTitle: "Nuna ios App",
-        alterText: "Illustration",
+        title: "Projeto: Dashboard de Análise de Vendas",
+        subTitle: "em Power BI",
+        alterText: "Dashboard",
         portfolioLink:
-          "",
+          "https://app.powerbi.com/view?r=eyJrIjoiMzYyMWY2ODktNGMzMi00M2E0LThkNTgtODZjYWRlY2RmOTA0IiwidCI6IjljODBmZWU3LTVlMWQtNDNmNy04YjViLTdkNGI0ZjU4MWEzOCJ9",
       },
 
       {
