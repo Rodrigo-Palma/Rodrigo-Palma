@@ -9,7 +9,7 @@ export default function SimpleSlider() {
     {
       imageName: "dark-theme",
       title: "Dark Theme Animation",
-      routePath: "home-dark-animation",
+      routePath: "r",
     },
     {
       imageName: "light-theme",
