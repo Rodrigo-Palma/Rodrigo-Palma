@@ -11,27 +11,27 @@ const skillContent = [
   },
   {
     name: "● Inteligência Artificial (IA) ● Aprendizado de Máquina ● Aprendizado Profundo",
-    numberPercent: "92",
+    numberPercent: "90",
     startCount: "0",
-    endCount: "92",
+    endCount: "90",
   },
   {
     name: "● Programação (Python, R, SQL, NoSQL, Javascript)",
-    numberPercent: "89",
+    numberPercent: "90",
     startCount: "0",
-    endCount: "89",
+    endCount: "90",
   },
   {
     name: "● Visualização de Dados ● Power BI ● Tableau",
     numberPercent: "95",
     startCount: "0",
-    endCount: "93",
+    endCount: "95",
   },
   {
     name: "● Big Data ● Hadoop ● Spark ● Databricks",
     numberPercent: "90",
     startCount: "0",
-    endCount: "92",
+    endCount: "90",
   },
   {
     name: "● Resolução de Problemas",
