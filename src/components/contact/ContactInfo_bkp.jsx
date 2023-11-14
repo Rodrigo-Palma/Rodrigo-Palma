@@ -4,7 +4,7 @@ const ContactInfo = () => {
   return (
     <>
       <div className="contact-info">
-        <h4>Entre em contato.</h4>
+        <h4>Qual a sua história? Entre em contato.</h4>
         <p>
           Estou disponível para trabalhos, projetos, freelance.
           Sinta-se à vontade para entrar em contanto.

@@ -38,6 +38,7 @@ const tabListContent = [
         portfolioLink:
           "https://app.powerbi.com/view?r=eyJrIjoiMzYyMWY2ODktNGMzMi00M2E0LThkNTgtODZjYWRlY2RmOTA0IiwidCI6IjljODBmZWU3LTVlMWQtNDNmNy04YjViLTdkNGI0ZjU4MWEzOCJ9",
       },
+/*
       {
         img: "/img/portfolio/m-portfolio-3.jpg",
         width: 400,
@@ -49,6 +50,7 @@ const tabListContent = [
         portfolioLink:
           "",
       },
+*/
       {
         img: "/img/portfolio/m-proj-4.jpg",
         width: 400,
@@ -60,6 +62,7 @@ const tabListContent = [
         portfolioLink:
           "https://github.com/Rodrigo-Palma/Proj-Engenharia-de-Atributos-Financeiros",
       },
+/*
       {
         img: "/img/portfolio/m-portfolio-5.jpg",
         width: 400,
@@ -113,9 +116,10 @@ const tabListContent = [
         alterText: "Web Motion",
         delayAnimation: "200",
         portfolioLink: "",
-      },
+      }, */
     ],
   },
+
   {
     porftoliItems: [
       {
@@ -129,6 +133,7 @@ const tabListContent = [
         portfolioLink:
           "https://github.com/Rodrigo-Palma/Proj_Fraudes_Cartao_Credito/",
       },
+/*
       {
         img: "/img/portfolio/m-portfolio-3.jpg",
         width: 400,
@@ -161,7 +166,7 @@ const tabListContent = [
         delayAnimation: "300",
         portfolioLink:
           "",
-      },
+      }, */
     ],
   },
   {
@@ -177,7 +182,7 @@ const tabListContent = [
         portfolioLink:
           "https://app.powerbi.com/view?r=eyJrIjoiMzYyMWY2ODktNGMzMi00M2E0LThkNTgtODZjYWRlY2RmOTA0IiwidCI6IjljODBmZWU3LTVlMWQtNDNmNy04YjViLTdkNGI0ZjU4MWEzOCJ9",
       },
-
+/*
       {
         img: "/img/portfolio/m-portfolio-5.jpg",
         width: 400,
@@ -199,22 +204,24 @@ const tabListContent = [
         delayAnimation: "200",
         portfolioLink:
           "",
-      },
+      }, */
     ],
   },
+
   {
     porftoliItems: [
       {
-        img: "/img/portfolio/m-portfolio-1.jpg",
+        img: "/img/portfolio/proj-big-data-1.jpg",
         width: 400,
         height: 550,
-        title: "Bottle Illustration",
-        subTitle: "Figma Shoot",
-        alterText: "Bottle Illustration",
+        title: "Em Breve",
+        subTitle: "",
+        alterText: "Em Breve",
         delayAnimation: "",
         portfolioLink:
           "",
       },
+/*
       {
         img: "/img/portfolio/m-portfolio-7.jpg",
         width: 400,
@@ -235,9 +242,10 @@ const tabListContent = [
         alterText: "Web Motion",
         delayAnimation: "200",
         portfolioLink: "",
-      },
+      },*/
     ],
   },
+
   {
     porftoliItems: [
       {
@@ -251,6 +259,7 @@ const tabListContent = [
         portfolioLink:
           "https://github.com/Rodrigo-Palma/Proj-Engenharia-de-Atributos-Financeiros",
       },
+/*
       {
         img: "/img/portfolio/m-portfolio-3.jpg",
         width: 400,
@@ -262,7 +271,6 @@ const tabListContent = [
         portfolioLink:
           "",
       },
-
       {
         img: "/img/portfolio/m-portfolio-5.jpg",
         width: 400,
@@ -284,7 +292,7 @@ const tabListContent = [
         delayAnimation: "300",
         portfolioLink:
           "",
-      },
+      },*/
     ],
   },
 ];

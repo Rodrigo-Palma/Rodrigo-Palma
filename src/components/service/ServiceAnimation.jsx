@@ -4,29 +4,34 @@ const ServiceContent = [
   {
     icon: "icon-mobile",
     title: "Ciêcia de dados",
-    descriptions: `Coleta, processamento e transformação de grandes volumes de dados;
-    Resolução de problemas empresariais utilizando técnicas baseadas em dados;
-    Modelagem Estatística, Modelagem Preditiva;
-    Consultoria em Estratégia de Dados, Soluções em Inteligência de Mercado;
-    Análise de Riscos e Fraudes`,
+    descriptions: `● Estratégias Avançadas de Mineração de Dados;
+    ● Desenvolvimento e Implementação de Modelos de Machine Learning;
+    ● Visualização e Interpretação Avançada de Dados;
+    ● Colaboração Efetiva com Equipes Interdisciplinares;
+    ● Interpretação e Comunicação de Insights Complexos;
+    ● Avaliação de Impacto e Relevância de Dados`,
     delayAnimation: "",
   },
   {
     icon: "icon-desktop",
     title: "Análise de Dados",
-    descriptions: `Análise Descritiva e Exploratória de dados, limpeza, pré-processamento, transformação e normalização de dados;
-    Visualização de dados, relatórios e apresentações;
-    Assessoria na tomada de decisões, monitoramento e atualização contínua bem como criação de Dashboards.`,
+    descriptions: `● Coleta, Limpeza e Pré-processamento de Dados;
+    ● Análise Estatística e Exploratória de Dados;
+    ● Desenvolvimento de Relatórios e Dashboards;
+    ● Colaboração Eficiente com Stakeholders;
+    ● Geração de Relatórios e Dashboards;
+    ● Assessoria na Tomada de Decisões;
+    ● Monitoramento Contínuo`,
     delayAnimation: "200",
   },
   {
     icon: "icon-target",
-    title: "Consultoria Financeira e criptomoedas",
-    descriptions: `Definição de perfil de investidor;
-    Montagem e otimização de carteira de investimentos;
-    Estratégias de Investimento em renda variável e criptomoedas;
-    Análise e Gerenciamento de risco;
-    Estratégias de renda passiva e liberdade financeira.`,
+    title: "Inteligência Artificial",
+    descriptions: `● Implementação de Algoritmos de Inteligência Artificial;
+    ● Construção e Treinamento de Modelos de Aprendizado de Máquina;
+    ● Otimização de Algoritmos para Desempenho e Eficiência;
+    ● Integração de Soluções de IA em Aplicações e Sistemas;
+    ● Pesquisa e Aplicação de Tecnologias Emergentes em IA`,
     delayAnimation: "400",
   },
 ];

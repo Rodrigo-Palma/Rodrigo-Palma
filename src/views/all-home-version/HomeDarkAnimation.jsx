@@ -67,7 +67,7 @@ const HomeOne = () => {
               data-aos-delay="200"
             >
               <div className="contact-form">
-                <h4>Deixe Sua Mensagem</h4>
+              {/*  <h4>Deixe Sua Mensagem</h4> */}
                 <Contact />
               </div>
             </div>

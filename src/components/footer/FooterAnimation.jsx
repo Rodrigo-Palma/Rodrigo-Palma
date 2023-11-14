@@ -2,7 +2,7 @@ import React from "react";
 import {
   //FaFacebookF,
   //FaTwitter,
-  FaInstagram,
+  //FaInstagram,
   FaLinkedinIn,
   //FaPinterestP,
 } from "react-icons/fa";
@@ -10,7 +10,7 @@ import {
 const SocialShare = [
   //{ Social: <FaFacebookF />, link: "https://www.facebook.com/rodrigo.s.palma" },
   //{ Social: <FaTwitter />, link: "https://twitter.com/RodrigoStachle1" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/rodrigospalma1/" },
+  //{ Social: <FaInstagram />, link: "https://www.instagram.com/rodrigospalma1/" },
   { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/in/rodrigospalma/" },
   //{ Social: <FaPinterestP />, link: "https://www.pinterest.com/rodrigo_s_palma" },
 ];
