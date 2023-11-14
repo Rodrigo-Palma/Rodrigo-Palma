@@ -9,10 +9,10 @@ const conctInfo = {
 const sliderContent = {
   name: "Rodrigo Palma",
   designation: "Cientista de Dados",
-  description: `Especializado em análise de dados, modelagem estatística, aprendizado de máquina, inteligência artificial e big data.
-  Também presto consultoria financeira, com otimização de portfólio, análise de riscos, investimentos em renda variável e criptomoedas, 
-  com foco na criação de renda passiva e liberdade financeira.`,
-  btnText: " Download CV",
+  description: `Especializado em análise de dados, aprendizado de máquina, inteligência artificial e big data.
+  Transformo complexidade em insights. Com afinidade no Mercado Financeiro, Criptomoedas e
+  estratégias para geração de renda e liberdade financeira.`,
+  btnText: "Download CV",
 };
 
 const Slider = () => {
