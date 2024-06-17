@@ -8,10 +8,10 @@ const resumeContent = [
     jobDuration: `Set 2017 - Atual`,
     timeDuraton: `Tempo Integral`,
     compnayName: "Tribunal de Justiça do Rio Grande do Sul",
-    jobDescription: `No papel de Assistência Direta ao Juiz, atuo na elaboração de minutas complexas de decisões e sentenças judiciais em
-    conformidade com leis e normativas complexas. Presto suporte no acompanhamento de processos, garantindo eficiência e
-    integridade. Acompanho prazos, oriento partes interessadas, colaborando com equipes multidisciplinares, incluindo
-    magistrados, servidores e advogados`
+    //jobDescription: `No papel de Assistência Direta ao Juiz, atuo na elaboração de minutas complexas de decisões e sentenças judiciais em
+    //conformidade com leis e normativas complexas. Presto suporte no acompanhamento de processos, garantindo eficiência e
+    //integridade. Acompanho prazos, oriento partes interessadas, colaborando com equipes multidisciplinares, incluindo
+    //magistrados, servidores e advogados`
   },
   {
     jobPosition: `Escriturário Concursado`,
@@ -19,21 +19,21 @@ const resumeContent = [
     jobDuration: `Mai 2015 - Ago 2017`,
     timeDuraton: `Tempo Integral`,
     compnayName: "Banco do Brasil S/A.",
-    jobDescription: `Gestão da Carteira Varejo: Destaco meu papel na Gestão da Carteira Varejo, com foco na carteira agropecuária. Estabeleci sólidos relacionamentos
-    com clientes, conduzindo negociações eficazes. Gerenciei operações de investimento e custeio, alcançando metas com
-    aumento de mais 128% no último semestre.
-`,
+    //jobDescription: `Gestão da Carteira Varejo: Destaco meu papel na Gestão da Carteira Varejo, com foco na carteira agropecuária. Estabeleci sólidos relacionamentos
+    //com clientes, conduzindo negociações eficazes. Gerenciei operações de investimento e custeio, alcançando metas com
+    //aumento de mais 128% no último semestre.
+
   },
   {
-    jobPosition: `Ex-sócio Administrador`,
+    jobPosition: `Ex-sócio Administrador - Desenvolvedor Full-Stack - Cientista de dados`,
     jobType: `Presencial | Remoto`,
     jobDuration: `Jun 2009 - Nov 2014`,
     timeDuraton: `Tempo Integral`,
     compnayName: "www.JogoMuitoOnline.com.br (Palma & Oliveira LTDA)",
-    jobDescription: `Como empresário, atuei em criando e gerenciando uma empresa especializada em venda de jogos, livros e Magic: The
-    Gathering. Supervisionei operações diárias, estratégias de vendas, e desenvolvi soluções web, infraestrutura em nuvem e
-    e-commerce. Mantive parcerias estratégicas, liderando campanhas de marketing que resultaram em um prêmio "TOP 3"
-    como maior revendedor LevelUP! na América Latina em 2011 e uma alta taxa de aprovação no PagSeguro.`
+    //jobDescription: `Como empresário, atuei em criando e gerenciando uma empresa especializada em venda de jogos, livros e Magic: The
+    //Gathering. Supervisionei operações diárias, estratégias de vendas, e desenvolvi soluções web, infraestrutura em nuvem e
+    //e-commerce. Mantive parcerias estratégicas, liderando campanhas de marketing que resultaram em um prêmio "TOP 3"
+    //como maior revendedor LevelUP! na América Latina em 2011 e uma alta taxa de aprovação no PagSeguro.`
   },
 ];
 
