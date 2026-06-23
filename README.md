@@ -31,9 +31,11 @@
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white)
 
-### 📌 Featured project
+### 📌 Featured projects
 
-- **[QuantLens](https://github.com/Rodrigo-Palma/quantlens)** — AI quant analyst for the Brazilian stock market (B3): computes quantitative signals and explains them in plain language with a local-first LLM. *(data → quant → RAG → agent → evals → API)*
+- **[QuantLens](https://github.com/Rodrigo-Palma/quantlens)** — AI quant analyst for B3: quant signals explained by a **local-first LLM**, grounded by RAG, with guardrails + offline evals in CI. *(GenAI / AI Engineering)*
+- **[DocLens](https://github.com/Rodrigo-Palma/doclens)** — local-first **RAG** over your documents with **cited answers**, running fully offline on Ollama (deterministic fallback for CI). *(GenAI / Retrieval)*
+- **[market-elt](https://github.com/Rodrigo-Palma/market-elt)** — reproducible **DuckDB + dbt** ELT pipeline with data-quality tests, runnable with zero infrastructure. *(Data Engineering)*
 
 ### 🎓 Certifications
 
