@@ -2,11 +2,13 @@
 
 <p align="center">
   <b>Data &amp; AI Engineer</b> — I build end-to-end systems from raw data to ML/LLM in production.<br/>
-  Azure Data Scientist &amp; Microsoft Fabric certified · MSc in Big Data &amp; Business Intelligence.
+  Azure Data Scientist &amp; Microsoft Fabric certified · MSc in Big Data &amp; Business Intelligence.<br/>
+  🌎 Porto Alegre, Brazil · 🟢 Open to remote Data &amp; AI roles (worldwide)
 </p>
 
 <p align="center">
   <a href="https://linkedin.com/in/rodrigospalma/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <img src="https://komarev.com/ghpvc/?username=Rodrigo-Palma&style=for-the-badge&color=0A66C2&label=Profile+views" alt="Profile views"/>
 </p>
 
 ---
@@ -16,6 +18,10 @@
 - **Data → ML → LLM, end-to-end.** Data engineering (pipelines, warehouses, lakehouses), machine learning, and modern GenAI (RAG, agents, fine-tuning) — shipped, not just notebooks.
 - **Impact at scale.** At a public institution I modernized the data stack, cut costs, and turned data into decisions that inform a 9-figure budget across thousands of users.
 - **Unusual edge:** a background in **Psychology** + a builder's history (full-stack founder) → I read both the system and the people using it.
+
+### 🔭 Currently
+
+Building **local-first AI** — RAG, agents and LoRA fine-tuning on local models (Ollama) — and **reproducible data pipelines**. See the featured projects below.
 
 ### 🛠️ Tech
 
@@ -45,3 +51,9 @@
   <img src="https://github-readme-stats.vercel.app/api?username=Rodrigo-Palma&show_icons=true&hide_border=true&count_private=true" alt="GitHub stats" height="160"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rodrigo-Palma&layout=compact&hide_border=true" alt="Top languages" height="160"/>
 </p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Rodrigo-Palma&hide_border=true" alt="GitHub streak" height="160"/>
+</p>
+
+<p align="center"><i>Open to remote opportunities — let's talk on <a href="https://linkedin.com/in/rodrigospalma/">LinkedIn</a>.</i></p>
