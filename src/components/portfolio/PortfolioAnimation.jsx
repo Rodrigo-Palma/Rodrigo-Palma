@@ -48,21 +48,9 @@ const projects = [
     portfolioLink: "https://github.com/Rodrigo-Palma/market-elt",
     cats: ["Data Engineering"],
   },
-  {
-    img: "/img/portfolio/m-proj-2.jpg",
-    width: 400,
-    height: 400,
-    title: "Sales Analytics Dashboard",
-    subTitle: "Power BI",
-    alterText: "Dashboards",
-    delayAnimation: "300",
-    portfolioLink:
-      "https://app.powerbi.com/view?r=eyJrIjoiMzYyMWY2ODktNGMzMi00M2E0LThkNTgtODZjYWRlY2RmOTA0IiwidCI6IjljODBmZWU3LTVlMWQtNDNmNy04YjViLTdkNGI0ZjU4MWEzOCJ9",
-    cats: ["Dashboards"],
-  },
 ];
 
-const tabList = ["All", "AI / GenAI", "Data Engineering", "Dashboards"];
+const tabList = ["All", "AI / GenAI", "Data Engineering"];
 
 const tabListContent = tabList.map((tab) => ({
   porftoliItems:
