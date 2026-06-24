@@ -6,296 +6,68 @@ import { FiLink } from "react-icons/fi";
 import Masonry from "react-masonry-css";
 
 const breakpointColumnsObj = {
-  default: 3,
-  1100: 3,
+  default: 2,
+  1100: 2,
   700: 2,
   500: 1,
 };
 
-const tabList = ["Todos", "Ciência/Análise de Dados", "Dashboard/Relatórios", "Big Data", "Finanças"];
-const tabListContent = [
+// Single source of truth for projects. Each project lists the categories
+// (tabs) it belongs to; the tabs below are derived from this list.
+const projects = [
   {
-    porftoliItems: [
-      {
-        img: "/img/portfolio/m-proj-1.jpg",
-        width: 400,
-        height: 550,
-        title: "Projeto: Detecção de Fraudes",
-        subTitle: "Em Cartões de Crédito",
-        alterText: "Ciência de Dados",
-        delayAnimation: "",
-        portfolioLink:
-          "https://github.com/Rodrigo-Palma/Proj_Fraudes_Cartao_Credito/",
-      },
-      {
-        img: "/img/portfolio/m-proj-2.jpg",
-        width: 400,
-        height: 400,
-        title: "Projeto: Dashboard de Análise de Vendas",
-        subTitle: "em Power BI",
-        alterText: "Dashboard",
-        delayAnimation: "100",
-        portfolioLink:
-          "https://app.powerbi.com/view?r=eyJrIjoiMzYyMWY2ODktNGMzMi00M2E0LThkNTgtODZjYWRlY2RmOTA0IiwidCI6IjljODBmZWU3LTVlMWQtNDNmNy04YjViLTdkNGI0ZjU4MWEzOCJ9",
-      },
-/*
-      {
-        img: "/img/portfolio/m-portfolio-3.jpg",
-        width: 400,
-        height: 700,
-        title: "Visual Design",
-        subTitle: "Themeforest Marke",
-        alterText: "Business Mockup",
-        delayAnimation: "200",
-        portfolioLink:
-          "",
-      },
-*/
-      {
-        img: "/img/portfolio/m-proj-4.jpg",
-        width: 400,
-        height: 400,
-        title: "Engenharia de Atributos Financeiros 📈:",
-        subTitle: "Potencializando Previsões com Dados Temporais",
-        alterText: "Finanças",
-        delayAnimation: "0",
-        portfolioLink:
-          "https://github.com/Rodrigo-Palma/Proj-Engenharia-de-Atributos-Financeiros",
-      },
-/*
-      {
-        img: "/img/portfolio/m-portfolio-5.jpg",
-        width: 400,
-        height: 700,
-        title: "Chatting Application",
-        subTitle: "Codecanyon Market",
-        alterText: "Bottle Illustration",
-        delayAnimation: "100",
-        portfolioLink:
-          "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-6.jpg",
-        width: 400,
-        height: 500,
-        title: "Web Application",
-        subTitle: "Behance Shot",
-        alterText: "Web Application",
-        delayAnimation: "200",
-        portfolioLink:
-           "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-7.jpg",
-        width: 400,
-        height: 700,
-        title: "Business Card",
-        subTitle: "Graphicriver Market",
-        alterText: "Business Card",
-        delayAnimation: "0",
-        portfolioLink:
-          "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-8.jpg",
-        width: 400,
-        height: 550,
-        title: "Chatting App Design",
-        subTitle: "Codecanyon Market",
-        alterText: "Chatting App Design",
-        delayAnimation: "100",
-        portfolioLink:
-          "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-9.jpg",
-        width: 400,
-        height: 400,
-        title: "Web Motion",
-        subTitle: "Behance Shot",
-        alterText: "Web Motion",
-        delayAnimation: "200",
-        portfolioLink: "",
-      }, */
-    ],
-  },
-
-  {
-    porftoliItems: [
-      {
-        img: "/img/portfolio/m-proj-1.jpg",
-        width: 400,
-        height: 550,
-        title: "Projeto: Detecção de Fraudes",
-        subTitle: "Em Cartões de Crédito",
-        alterText: "Ciência de Dados",
-        delayAnimation: "",
-        portfolioLink:
-          "https://github.com/Rodrigo-Palma/Proj_Fraudes_Cartao_Credito/",
-      },
-/*
-      {
-        img: "/img/portfolio/m-portfolio-3.jpg",
-        width: 400,
-        height: 700,
-        title: "Visual Design",
-        subTitle: "Themeforest Marke",
-        alterText: "Business Mockup",
-        delayAnimation: "100",
-        portfolioLink:
-          "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-8.jpg",
-        width: 400,
-        height: 550,
-        title: "Chatting App Design",
-        subTitle: "Codecanyon Market",
-        alterText: "Chatting App Design",
-        delayAnimation: "200",
-        portfolioLink:
-          "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-4.jpg",
-        width: 400,
-        height: 400,
-        title: "Business Card",
-        subTitle: "Graphicriver Market",
-        alterText: "E-Cosmetics",
-        delayAnimation: "300",
-        portfolioLink:
-          "",
-      }, */
-    ],
+    img: "/img/portfolio/quantlens.png",
+    width: 1200,
+    height: 675,
+    title: "QuantLens — AI Quant Analyst (B3)",
+    subTitle: "Local-first LLM + RAG + evals (Python/FastAPI)",
+    alterText: "AI / GenAI",
+    delayAnimation: "",
+    portfolioLink: "https://github.com/Rodrigo-Palma/quantlens",
+    cats: ["AI / GenAI"],
   },
   {
-    porftoliItems: [
-      {
-        img: "/img/portfolio/m-proj-2.jpg",
-        width: 400,
-        height: 400,
-        title: "Projeto: Dashboard de Análise de Vendas",
-        subTitle: "em Power BI",
-        alterText: "Dashboard",
-        delayAnimation: "",
-        portfolioLink:
-          "https://app.powerbi.com/view?r=eyJrIjoiMzYyMWY2ODktNGMzMi00M2E0LThkNTgtODZjYWRlY2RmOTA0IiwidCI6IjljODBmZWU3LTVlMWQtNDNmNy04YjViLTdkNGI0ZjU4MWEzOCJ9",
-      },
-/*
-      {
-        img: "/img/portfolio/m-portfolio-5.jpg",
-        width: 400,
-        height: 700,
-        title: "Chatting Application",
-        subTitle: "Codecanyon Market",
-        alterText: "Bottle Illustration",
-        delayAnimation: "100",
-        portfolioLink:
-          "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-6.jpg",
-        width: 400,
-        height: 550,
-        title: "Web Application",
-        subTitle: "Behance Shot",
-        alterText: "Web Application",
-        delayAnimation: "200",
-        portfolioLink:
-          "",
-      }, */
-    ],
+    img: "/img/portfolio/doclens.png",
+    width: 1200,
+    height: 675,
+    title: "DocLens — Local RAG with Cited Answers",
+    subTitle: "Offline RAG over documents (Ollama)",
+    alterText: "AI / GenAI",
+    delayAnimation: "100",
+    portfolioLink: "https://github.com/Rodrigo-Palma/doclens",
+    cats: ["AI / GenAI"],
   },
-
   {
-    porftoliItems: [
-      {
-        img: "/img/portfolio/proj-big-data-1.jpg",
-        width: 400,
-        height: 550,
-        title: "Em Breve",
-        subTitle: "",
-        alterText: "Em Breve",
-        delayAnimation: "",
-        portfolioLink:
-          "",
-      },
-/*
-      {
-        img: "/img/portfolio/m-portfolio-7.jpg",
-        width: 400,
-        height: 700,
-        title: "Business Card",
-        subTitle: "Graphicriver Market",
-        alterText: "Business Card",
-        delayAnimation: "100",
-        portfolioLink:
-          "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-9.jpg",
-        width: 400,
-        height: 400,
-        title: "Web Motion",
-        subTitle: "Behance Shot",
-        alterText: "Web Motion",
-        delayAnimation: "200",
-        portfolioLink: "",
-      },*/
-    ],
+    img: "/img/portfolio/market-elt.png",
+    width: 1200,
+    height: 675,
+    title: "market-elt — DuckDB + dbt ELT",
+    subTitle: "Reproducible pipeline + data-quality tests",
+    alterText: "Data Engineering",
+    delayAnimation: "200",
+    portfolioLink: "https://github.com/Rodrigo-Palma/market-elt",
+    cats: ["Data Engineering"],
   },
-
   {
-    porftoliItems: [
-      {
-        img: "/img/portfolio/m-proj-4.jpg",
-        width: 400,
-        height: 400,
-        title: "Engenharia de Atributos Financeiros 📈:",
-        subTitle: "Potencializando Previsões com Dados Temporais",
-        alterText: "Finanças",
-        delayAnimation: "0",
-        portfolioLink:
-          "https://github.com/Rodrigo-Palma/Proj-Engenharia-de-Atributos-Financeiros",
-      },
-/*
-      {
-        img: "/img/portfolio/m-portfolio-3.jpg",
-        width: 400,
-        height: 700,
-        title: "Visual Design",
-        subTitle: "Themeforest Marke",
-        alterText: "Business Mockup",
-        delayAnimation: "100",
-        portfolioLink:
-          "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-5.jpg",
-        width: 400,
-        height: 700,
-        title: "Chatting Application",
-        subTitle: "Codecanyon Market",
-        alterText: "Bottle Illustration",
-        delayAnimation: "200",
-        portfolioLink:
-          "",
-      },
-      {
-        img: "/img/portfolio/m-portfolio-6.jpg",
-        width: 400,
-        height: 550,
-        title: "Web Application",
-        subTitle: "Behance Shot",
-        alterText: "Web Application",
-        delayAnimation: "300",
-        portfolioLink:
-          "",
-      },*/
-    ],
+    img: "/img/portfolio/m-proj-2.jpg",
+    width: 400,
+    height: 400,
+    title: "Sales Analytics Dashboard",
+    subTitle: "Power BI",
+    alterText: "Dashboards",
+    delayAnimation: "300",
+    portfolioLink:
+      "https://app.powerbi.com/view?r=eyJrIjoiMzYyMWY2ODktNGMzMi00M2E0LThkNTgtODZjYWRlY2RmOTA0IiwidCI6IjljODBmZWU3LTVlMWQtNDNmNy04YjViLTdkNGI0ZjU4MWEzOCJ9",
+    cats: ["Dashboards"],
   },
 ];
+
+const tabList = ["All", "AI / GenAI", "Data Engineering", "Dashboards"];
+
+const tabListContent = tabList.map((tab) => ({
+  porftoliItems:
+    tab === "All" ? projects : projects.filter((p) => p.cats.includes(tab)),
+}));
 
 const PortfolioAnimation = () => {
   return (
@@ -348,7 +120,7 @@ const PortfolioAnimation = () => {
                             <div className="gallery-link">
                               <img
                                 src={val.img}
-                                alt="Childhood"
+                                alt={val.alterText}
                                 role="button"
                                 ref={ref}
                                 onClick={open}
