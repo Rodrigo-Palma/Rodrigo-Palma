@@ -6,8 +6,8 @@ import { FiLink } from "react-icons/fi";
 import Masonry from "react-masonry-css";
 
 const breakpointColumnsObj = {
-  default: 3,
-  1100: 3,
+  default: 2,
+  1100: 2,
   700: 2,
   500: 1,
 };
@@ -16,9 +16,9 @@ const breakpointColumnsObj = {
 // (tabs) it belongs to; the tabs below are derived from this list.
 const projects = [
   {
-    img: "/img/portfolio/m-proj-4.jpg",
-    width: 400,
-    height: 400,
+    img: "/img/portfolio/quantlens.png",
+    width: 1200,
+    height: 675,
     title: "QuantLens — AI Quant Analyst (B3)",
     subTitle: "Local-first LLM + RAG + evals (Python/FastAPI)",
     alterText: "AI / GenAI",
@@ -26,9 +26,9 @@ const projects = [
     cats: ["AI / GenAI"],
   },
   {
-    img: "/img/portfolio/m-portfolio-6.jpg",
-    width: 400,
-    height: 500,
+    img: "/img/portfolio/doclens.png",
+    width: 1200,
+    height: 675,
     title: "DocLens — Local RAG with Cited Answers",
     subTitle: "Offline RAG over documents (Ollama)",
     alterText: "AI / GenAI",
@@ -36,35 +36,14 @@ const projects = [
     cats: ["AI / GenAI"],
   },
   {
-    img: "/img/portfolio/proj-big-data-1.jpg",
-    width: 400,
-    height: 400,
+    img: "/img/portfolio/market-elt.png",
+    width: 1200,
+    height: 675,
     title: "market-elt — DuckDB + dbt ELT",
     subTitle: "Reproducible pipeline + data-quality tests",
     alterText: "Data Engineering",
     portfolioLink: "https://github.com/Rodrigo-Palma/market-elt",
     cats: ["Data Engineering"],
-  },
-  {
-    img: "/img/portfolio/m-proj-1.jpg",
-    width: 400,
-    height: 550,
-    title: "Credit-Card Fraud Detection",
-    subTitle: "Machine learning classification",
-    alterText: "Data Science",
-    portfolioLink: "https://github.com/Rodrigo-Palma/Proj_Fraudes_Cartao_Credito/",
-    cats: ["Data Science"],
-  },
-  {
-    img: "/img/portfolio/m-portfolio-2.jpg",
-    width: 400,
-    height: 400,
-    title: "Financial Feature Engineering 📈",
-    subTitle: "Forecasting with time-series data",
-    alterText: "Data Science",
-    portfolioLink:
-      "https://github.com/Rodrigo-Palma/Proj-Engenharia-de-Atributos-Financeiros",
-    cats: ["Data Science"],
   },
   {
     img: "/img/portfolio/m-proj-2.jpg",
@@ -79,13 +58,7 @@ const projects = [
   },
 ];
 
-const tabList = [
-  "All",
-  "AI / GenAI",
-  "Data Engineering",
-  "Data Science",
-  "Dashboards",
-];
+const tabList = ["All", "AI / GenAI", "Data Engineering", "Dashboards"];
 
 const tabListContent = tabList.map((tab) => ({
   porftoliItems:
