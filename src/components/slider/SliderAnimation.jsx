@@ -8,10 +8,10 @@ const conctInfo = {
 
 const sliderContent = {
   name: "Rodrigo Palma",
-  designation: "Cientista de Dados",
-  description: `Especializado em análise de dados, aprendizado de máquina, inteligência artificial e big data.
-  Transformo complexidade em insights. Com afinidade no Mercado Financeiro, Criptomoedas e
-  estratégias para geração de renda e liberdade financeira.`,
+  designation: "AI Engineer",
+  description: `I build end-to-end AI systems — from data pipelines to LLMs and RAG agents — running in production.
+  Azure Data Scientist (DP-100) & Microsoft Fabric (DP-600) certified. Open to remote AI / Data Engineering
+  roles worldwide.`,
   btnText: "Download CV",
 };
 
@@ -27,18 +27,6 @@ const Slider = () => {
               {conctInfo.email}
             </a>
           </div>
-          {/* PARA FUTURO - SITE BILINGUE
-          <div className="hb-lang">
-            <ul className="nav">
-              <li className="active">
-                <a href="#">EN</a>
-              </li>
-              <li>
-                <a href="#">PT</a>
-              </li>
-            </ul>
-          </div>
-        */}
         </div>
         {/* End hp-top-fixed */}
 
@@ -47,7 +35,7 @@ const Slider = () => {
             <div className="col-lg-7">
               <div className="type-box">
                 <h6 data-aos="fade-up" data-aos-duration="1200">
-                  Olá, Meu nome é
+                  Hi, my name is
                 </h6>
                 <h1
                   className="font-alt"
@@ -63,9 +51,10 @@ const Slider = () => {
                   data-aos-delay="200"
                 >
                   <TextLoop>
-                    <p className="loop-text lead"> Cientista/Analista de Dados</p>
-                    <p className="loop-text lead"> Certificado pela Microsoft</p>
-                    <p className="loop-text lead"> Especialista em Dados</p>
+                    <p className="loop-text lead"> AI Engineer</p>
+                    <p className="loop-text lead"> LLM / RAG &amp; MLOps</p>
+                    <p className="loop-text lead"> Data Engineer</p>
+                    <p className="loop-text lead"> Azure Data Scientist (DP-100)</p>
                   </TextLoop>
                 </div>
 

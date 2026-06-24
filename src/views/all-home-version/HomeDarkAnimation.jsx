@@ -4,7 +4,6 @@ import Slider from "../../components/slider/SliderAnimation";
 import About from "../../components/about/AboutAnimation";
 import Resume from "../../components/resume/ResumeAnimation";
 import Portfolio from "../../components/portfolio/PortfolioAnimation";
-import Blog from "../../components/blog/BlogAnimation";
 import Contact from "../../components/contact/Contact";
 import ContactInfo from "../../components/contact/ContactInfo";
 import Map from "../../components/contact/Map";
@@ -12,8 +11,7 @@ import Footer from "../../components/footer/FooterAnimation";
 import useDocumentTitle from "../../components/useDocumentTitle";
 
 const HomeOne = () => {
-  useDocumentTitle(
-    "Rodrigo Palma || Portfolio || Cientista/Analista de Dados");
+  useDocumentTitle("Rodrigo Palma — AI Engineer");
   return (
     <div className="main-left theme-dark">
       <Header />
@@ -31,19 +29,9 @@ const HomeOne = () => {
       <section id="work" className="section theme-light dark-bg">
         <div className="container">
           <div className="title">
-            <h3>Meus Projetos.</h3>
+            <h3>Projects</h3>
           </div>
           <Portfolio />
-        </div>
-      </section>
-      {/* End Portfolio Section */}
-
-      <section id="blog" className="section">
-        <div className="container">
-          <div className="title">
-            <h3>Artigos.</h3>
-          </div>
-          <Blog />
         </div>
       </section>
       {/* End Portfolio Section */}

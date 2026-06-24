@@ -21,9 +21,9 @@ const projects = [
     height: 400,
     title: "QuantLens — AI Quant Analyst (B3)",
     subTitle: "Local-first LLM + RAG + evals (Python/FastAPI)",
-    alterText: "IA / GenAI",
+    alterText: "AI / GenAI",
     portfolioLink: "https://github.com/Rodrigo-Palma/quantlens",
-    cats: ["IA / GenAI", "Finanças"],
+    cats: ["AI / GenAI"],
   },
   {
     img: "/img/portfolio/m-portfolio-6.jpg",
@@ -31,9 +31,9 @@ const projects = [
     height: 500,
     title: "DocLens — Local RAG with Cited Answers",
     subTitle: "Offline RAG over documents (Ollama)",
-    alterText: "IA / GenAI",
+    alterText: "AI / GenAI",
     portfolioLink: "https://github.com/Rodrigo-Palma/doclens",
-    cats: ["IA / GenAI"],
+    cats: ["AI / GenAI"],
   },
   {
     img: "/img/portfolio/proj-big-data-1.jpg",
@@ -41,38 +41,38 @@ const projects = [
     height: 400,
     title: "market-elt — DuckDB + dbt ELT",
     subTitle: "Reproducible pipeline + data-quality tests",
-    alterText: "Engenharia de Dados",
+    alterText: "Data Engineering",
     portfolioLink: "https://github.com/Rodrigo-Palma/market-elt",
-    cats: ["Engenharia de Dados"],
+    cats: ["Data Engineering"],
   },
   {
     img: "/img/portfolio/m-proj-1.jpg",
     width: 400,
     height: 550,
-    title: "Detecção de Fraudes",
-    subTitle: "Em Cartões de Crédito",
-    alterText: "Ciência de Dados",
+    title: "Credit-Card Fraud Detection",
+    subTitle: "Machine learning classification",
+    alterText: "Data Science",
     portfolioLink: "https://github.com/Rodrigo-Palma/Proj_Fraudes_Cartao_Credito/",
-    cats: ["Ciência de Dados"],
+    cats: ["Data Science"],
   },
   {
     img: "/img/portfolio/m-portfolio-2.jpg",
     width: 400,
     height: 400,
-    title: "Engenharia de Atributos Financeiros 📈",
-    subTitle: "Previsões com dados temporais",
-    alterText: "Finanças",
+    title: "Financial Feature Engineering 📈",
+    subTitle: "Forecasting with time-series data",
+    alterText: "Data Science",
     portfolioLink:
       "https://github.com/Rodrigo-Palma/Proj-Engenharia-de-Atributos-Financeiros",
-    cats: ["Ciência de Dados", "Finanças"],
+    cats: ["Data Science"],
   },
   {
     img: "/img/portfolio/m-proj-2.jpg",
     width: 400,
     height: 400,
-    title: "Dashboard de Análise de Vendas",
-    subTitle: "em Power BI",
-    alterText: "Dashboard",
+    title: "Sales Analytics Dashboard",
+    subTitle: "Power BI",
+    alterText: "Dashboards",
     portfolioLink:
       "https://app.powerbi.com/view?r=eyJrIjoiMzYyMWY2ODktNGMzMi00M2E0LThkNTgtODZjYWRlY2RmOTA0IiwidCI6IjljODBmZWU3LTVlMWQtNDNmNy04YjViLTdkNGI0ZjU4MWEzOCJ9",
     cats: ["Dashboards"],
@@ -80,16 +80,16 @@ const projects = [
 ];
 
 const tabList = [
-  "Todos",
-  "IA / GenAI",
-  "Engenharia de Dados",
-  "Ciência de Dados",
+  "All",
+  "AI / GenAI",
+  "Data Engineering",
+  "Data Science",
   "Dashboards",
 ];
 
 const tabListContent = tabList.map((tab) => ({
   porftoliItems:
-    tab === "Todos" ? projects : projects.filter((p) => p.cats.includes(tab)),
+    tab === "All" ? projects : projects.filter((p) => p.cats.includes(tab)),
 }));
 
 const Portfolio = () => {

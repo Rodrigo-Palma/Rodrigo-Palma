@@ -27,7 +27,7 @@ const About = () => {
                 </div>
                 {/* End img */}
                 <div className="info">
-                  <p>Cientista de Dados</p>
+                  <p>AI Engineer</p>
                   <h3>Rodrigo Palma</h3>
                 </div>
                 {/* End info */}
@@ -44,17 +44,19 @@ const About = () => {
             >
               <div className="about-info">
                 <div className="title">
-                  <h3>Sobre Mim</h3>
+                  <h3>About Me</h3>
                 </div>
                 <div className="about-text">
                   <p>
-                    Sou um entusiasta no campo de Ciência e Análise de Dados, pronto para embarcar em desafios enriquecedores. 
-                    E estou comprometido em desenvolver minhas habilidades na análise de dados 
-                    para contribuir com empresas e projetos notáveis em escala global. Estou animado para colaborar com equipes talentosas 
-                    e abraçar novas oportunidades neste empolgante universo dos dados.
+                    I&apos;m an AI &amp; Data Engineer who builds end-to-end systems — from
+                    data pipelines and warehouses to machine learning and modern GenAI
+                    (RAG, agents, fine-tuning) — and ships them to production. I care
+                    about reliable, well-tested software and turning data into decisions.
                   </p>
                   <p>
-                    
+                    Azure Data Scientist (DP-100) and Microsoft Fabric (DP-600) certified,
+                    with an MSc in Big Data &amp; Business Intelligence. Currently open to
+                    remote AI / Data Engineering roles worldwide.
                   </p>
                 </div>
                 <div className="info-list">
@@ -62,27 +64,27 @@ const About = () => {
                     <div className="col-sm-6">
                       <ul>
                         <li>
-                          <label>Nome: </label>
+                          <label>Name: </label>
                           <span>Rodrigo Palma</span>
                         </li>
                         <li>
-                          <label>Interesses: </label>
-                          <span>Ciência de dados, Inteligência artifical, Big Data, Mercado Financeiro, Blockchain</span>
+                          <label>Focus: </label>
+                          <span>AI Engineering, LLMs / RAG, MLOps, Data Engineering</span>
                         </li>
                       </ul>
                     </div>
                     <div className="col-sm-6">
                       <ul>
                         <li>
-                          <label>Phone: </label>
-                          <span>+55 (53) 99957-7605</span>
+                          <label>Location: </label>
+                          <span>Brazil — open to remote / relocation</span>
                         </li>
                         <li>
                           <label>Email: </label>
                           <span>email.rodrigopalma@gmail.com</span>
                         </li>
                         <li>
-                          <label>Github: </label>
+                          <label>GitHub: </label>
                           <span>Rodrigo-Palma</span>
                         </li>
                        </ul>
@@ -107,7 +109,7 @@ const About = () => {
 
           {/* End separated */}
           <div className="title">
-            <h3>O que eu faço??</h3>
+            <h3>What I do</h3>
           </div>
 
           <Services />
@@ -126,9 +128,9 @@ const About = () => {
           {/* End separated */}
 
           <div className="title">
-            <h3>Certificações.</h3>
+            <h3>Certifications</h3>
           </div>
-          
+
           <Awards />
           {/* End Awards */}
 
@@ -141,9 +143,9 @@ const About = () => {
               })`,
             }}
           ></div>
-          
+
           {/* End separated */}
-           
+
           {/*<div className="title">
             <h3>Recomendações.</h3>
           </div>

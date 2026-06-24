@@ -4,52 +4,46 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const skillContent = [
   {
-    name: "● Ciência de Dados ● Análise de Dados",
-    numberPercent: "95",
-    startCount: "0",
-    endCount: "95",
-  },
-  {
-    name: "● Inteligência Artificial (IA) ● Aprendizado de Máquina ● Aprendizado Profundo",
-    numberPercent: "90",
-    startCount: "0",
-    endCount: "90",
-  },
-  {
-    name: "● Programação (Python, R, SQL, NoSQL, Javascript)",
-    numberPercent: "90",
-    startCount: "0",
-    endCount: "90",
-  },
-  {
-    name: "● Visualização de Dados ● Power BI ● Tableau",
-    numberPercent: "95",
-    startCount: "0",
-    endCount: "95",
-  },
-  {
-    name: "● Big Data ● Hadoop ● Spark ● Databricks",
-    numberPercent: "90",
-    startCount: "0",
-    endCount: "90",
-  },
-  {
-    name: "● Resolução de Problemas",
-    numberPercent: "92",
-    startCount: "0",
-    endCount: "92",
-  },
-  {
-    name: "● Mercado Financeiro ● Renda Variável ● Renda Fixa ● Derivativos ● Criptomoedas",
+    name: "● AI / LLMs ● RAG ● Agents ● Fine-tuning",
     numberPercent: "93",
     startCount: "0",
     endCount: "93",
   },
   {
-    name: "● Clouding ● AWS ● Azure",
+    name: "● Machine Learning ● Deep Learning (PyTorch)",
+    numberPercent: "90",
+    startCount: "0",
+    endCount: "90",
+  },
+  {
+    name: "● Programming (Python, SQL, JavaScript/TypeScript)",
+    numberPercent: "92",
+    startCount: "0",
+    endCount: "92",
+  },
+  {
+    name: "● Data Engineering ● Spark ● dbt ● Airflow ● Kafka",
+    numberPercent: "90",
+    startCount: "0",
+    endCount: "90",
+  },
+  {
+    name: "● MLOps ● Docker ● Kubernetes ● CI/CD ● MLflow",
     numberPercent: "88",
     startCount: "0",
     endCount: "88",
+  },
+  {
+    name: "● Cloud ● AWS ● Azure",
+    numberPercent: "88",
+    startCount: "0",
+    endCount: "88",
+  },
+  {
+    name: "● Data Visualization ● Power BI ● Microsoft Fabric",
+    numberPercent: "92",
+    startCount: "0",
+    endCount: "92",
   },
 ];
 

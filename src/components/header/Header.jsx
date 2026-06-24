@@ -8,7 +8,7 @@ import {
   FiFileText,
   FiPhoneOutgoing,
 } from "react-icons/fi";
-import { FaHome, FaBlog } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -40,7 +40,7 @@ const Header = () => {
 
           <Scrollspy
             className="nav nav-menu"
-            items={["home", "sobre", "experiência", "portfólio", "blog", "contato"]}
+            items={["home", "about", "resume", "work", "contactus"]}
             currentClassName="active"
             offset={-30}
           >
@@ -68,7 +68,7 @@ const Header = () => {
               >
                 <FiUser />
                 <ReactTooltip id="ABOUT" place="top" type="dark" effect="float">
-                  <span>Sobre</span>
+                  <span>About</span>
                 </ReactTooltip>
               </a>
             </li>
@@ -87,7 +87,7 @@ const Header = () => {
                   type="dark"
                   effect="float"
                 >
-                  <span>Experiência</span>
+                  <span>Experience</span>
                 </ReactTooltip>
               </a>
             </li>
@@ -101,21 +101,7 @@ const Header = () => {
               >
                 <FiBriefcase />
                 <ReactTooltip id="WORK" place="top" type="dark" effect="float">
-                  <span>Portfólio</span>
-                </ReactTooltip>
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link"
-                href="#blog"
-                data-tip
-                data-for="BLOG"
-                onClick={handleClick}
-              >
-                <FaBlog />
-                <ReactTooltip id="BLOG" place="top" type="dark" effect="float">
-                  <span>Blog</span>
+                  <span>Projects</span>
                 </ReactTooltip>
               </a>
             </li>
@@ -134,7 +120,7 @@ const Header = () => {
                   type="dark"
                   effect="float"
                 >
-                  <span>Contato</span>
+                  <span>Contact</span>
                 </ReactTooltip>
               </a>
             </li>

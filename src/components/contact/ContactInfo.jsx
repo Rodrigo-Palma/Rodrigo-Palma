@@ -4,17 +4,17 @@ const ContactInfo = () => {
   return (
     <>
       <div className="contact-info">
-        <h4>Entre em contato.</h4>
+        <h4>Get in touch</h4>
         <p>
-          Estou disponível para trabalhos, projetos, freelance.
-          Sinta-se à vontade para entrar em contanto.
+          Open to remote AI / Data Engineering roles worldwide. Feel free to
+          reach out — I&apos;d be glad to talk.
         </p>
 
         <ul>
           <li className="media">
             <i className="icon icon-map"></i>
             <span className="media-body">
-              Porto Alegre - Rio Grande do Sul - Brasil.
+              Porto Alegre, Brazil — open to remote / relocation
             </span>
           </li>
           {/* End li */}

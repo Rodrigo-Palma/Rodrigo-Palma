@@ -3,76 +3,68 @@ import Skills from "../skills/Skills";
 
 const resumeContent = [
   {
-    jobPosition: `Técnico Judiciário - Secretário de Juiz`,
-    jobType: `Presencial | Remoto`,
-    jobDuration: `Set 2017 - Atual`,
-    timeDuraton: `Tempo Integral`,
-    compnayName: "Tribunal de Justiça do Rio Grande do Sul",
-    //jobDescription: `No papel de Assistência Direta ao Juiz, atuo na elaboração de minutas complexas de decisões e sentenças judiciais em
-    //conformidade com leis e normativas complexas. Presto suporte no acompanhamento de processos, garantindo eficiência e
-    //integridade. Acompanho prazos, oriento partes interessadas, colaborando com equipes multidisciplinares, incluindo
-    //magistrados, servidores e advogados`
+    jobPosition: `Data & AI Engineer`,
+    jobType: `On-site | Remote`,
+    jobDuration: `2024 - Present`,
+    timeDuraton: `Full-time`,
+    compnayName: "Public Defender's Office of Rio Grande do Sul (DPE-RS)",
+    jobDescription: `Modernized the data stack (resilience and reliability) and built modern,
+    interactive dashboards powered by AI and NLP. Designed new ETL pipelines that unlocked
+    previously unavailable data, and quantified the productivity of staff with real data to
+    support decisions informing a 9-figure budget. Drove a data-driven culture across the
+    organization.`,
   },
   {
-    jobPosition: `Escriturário Concursado`,
-    jobType: `Presencial`,
-    jobDuration: `Mai 2015 - Ago 2017`,
-    timeDuraton: `Tempo Integral`,
-    compnayName: "Banco do Brasil S/A.",
-    //jobDescription: `Gestão da Carteira Varejo: Destaco meu papel na Gestão da Carteira Varejo, com foco na carteira agropecuária. Estabeleci sólidos relacionamentos
-    //com clientes, conduzindo negociações eficazes. Gerenciei operações de investimento e custeio, alcançando metas com
-    //aumento de mais 128% no último semestre.
-
+    jobPosition: `Judicial Technician`,
+    jobType: `On-site`,
+    jobDuration: `2017 - 2024`,
+    timeDuraton: `Full-time`,
+    compnayName: "Court of Justice of Rio Grande do Sul (TJRS)",
   },
   {
-    jobPosition: `Ex-sócio Administrador - Desenvolvedor Full-Stack - Cientista de dados`,
-    jobType: `Presencial | Remoto`,
-    jobDuration: `Jun 2009 - Nov 2014`,
-    timeDuraton: `Tempo Integral`,
-    compnayName: "www.JogoMuitoOnline.com.br (Palma & Oliveira LTDA)",
-    //jobDescription: `Como empresário, atuei em criando e gerenciando uma empresa especializada em venda de jogos, livros e Magic: The
-    //Gathering. Supervisionei operações diárias, estratégias de vendas, e desenvolvi soluções web, infraestrutura em nuvem e
-    //e-commerce. Mantive parcerias estratégicas, liderando campanhas de marketing que resultaram em um prêmio "TOP 3"
-    //como maior revendedor LevelUP! na América Latina em 2011 e uma alta taxa de aprovação no PagSeguro.`
+    jobPosition: `Banking Clerk`,
+    jobType: `On-site`,
+    jobDuration: `2015 - 2017`,
+    timeDuraton: `Full-time`,
+    compnayName: "Banco do Brasil S/A",
+  },
+  {
+    jobPosition: `Co-founder & Full-Stack Developer`,
+    jobType: `On-site | Remote`,
+    jobDuration: `2009 - 2014`,
+    timeDuraton: `Full-time`,
+    compnayName: "JogoMuitoOnline (Palma & Oliveira Ltda)",
+    jobDescription: `Built and ran an e-commerce business end to end: web development, cloud
+    infrastructure and payments. ~5 years shipping full-stack software as a founder.`,
   },
 ];
 
 const educatonContent = [
   {
     passingYear: "2023-2025",
-    degreeTitle: "Mestrado - Big Data e Business Intelligence",
-    instituteName: "ENEB - Escola de Negócios Europeia de Barcelona",
+    degreeTitle: "MSc — Big Data & Business Intelligence",
+    instituteName: "ENEB — European Business School of Barcelona",
   },
   {
-    passingYear: "2022-2022",
-    degreeTitle: "Pós-graduação Lato Sensu - Especialização - Big Data e Ciência de Dados",
-    instituteName: "Faculdade Única",
+    passingYear: "2020-2024",
+    degreeTitle: "BSc — Computer Engineering",
+    instituteName: "Universidade Cruzeiro do Sul",
   },
   {
     passingYear: "2022-2023",
-    degreeTitle: "Pós-graduação Lato Sensu - MBA - Tecnologia para Negócios: Inteligência Artificial (IA), Data Science e Big Data",
+    degreeTitle: "MBA — Technology for Business: AI, Data Science & Big Data",
     instituteName: "Faculdade Única",
   },
   {
-    passingYear: "2023-2023",
-    degreeTitle: "Pós-graduação Lato Sensu - Especialização - Inteligência Artificial",
-    instituteName: "Univitória EAD",
+    passingYear: "2023",
+    degreeTitle: "Postgraduate — Artificial Intelligence",
+    instituteName: "Faculdade Iguaçu",
   },
   {
-    passingYear: "2020-2023",
-    degreeTitle: "Técnologo - Gestão da Tecnologia da Informação",
-    instituteName: "Cruzeiro do Sul Virtual",
+    passingYear: "2022",
+    degreeTitle: "Postgraduate — Big Data & Data Science",
+    instituteName: "Faculdade Única",
   },
-  /*{
-    passingYear: "2020-2022",
-    degreeTitle: "Associate Degree - Information Technology Management"
-    instituteName: "Cruzeiro do Sul Virtual",
-  },
-  {
-    passingYear: "1997-2003",
-    degreeTitle: "Bachelor Degree - Psychology",
-    instituteName: "Universidade da Região da Campanha - URCAMP",
-  }, */
 ];
 
 const Resume = () => {
@@ -81,7 +73,7 @@ const Resume = () => {
       <section id="resume" className="section">
         <div className="container">
           <div className="title">
-            <h3>Experiência.</h3>
+            <h3>Experience</h3>
           </div>
           {/* End title */}
           <div className="resume-box">
@@ -125,7 +117,7 @@ const Resume = () => {
           {/* End separated */}
 
           <div className="title">
-            <h3>Educação & Habilidades.</h3>{" "}
+            <h3>Education &amp; Skills</h3>{" "}
           </div>
 
           <div className="row align-items-center">
