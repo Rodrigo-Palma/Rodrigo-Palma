@@ -1,9 +1,9 @@
 <h1 align="center">Hi, I'm Rodrigo Palma 👋</h1>
 
 <p align="center">
-  <b>Data &amp; AI Engineer</b> — I build end-to-end systems from raw data to ML/LLM in production.<br/>
-  Azure Data Scientist &amp; Microsoft Fabric certified · MSc in Big Data &amp; Business Intelligence.<br/>
-  🌎 Porto Alegre, Brazil · 🟢 Open to remote Data &amp; AI roles (worldwide)
+  <b>Senior Data &amp; AI Engineer</b> — I take systems from <b>raw data to ML/LLM in production</b>:<br/>
+  pipelines, RAG, agents, evals, and the boring reliable plumbing included.<br/>
+  🌎 Porto Alegre, Brazil · 🟢 <b>Open to remote Data &amp; AI roles (worldwide)</b> · 📩 email.rodrigopalma@gmail.com
 </p>
 
 <p align="center">
@@ -13,15 +13,32 @@
 
 ---
 
-### 🚀 What I do
+### 💥 Impact, not just code
 
-- **Data → ML → LLM, end-to-end.** Data engineering (pipelines, warehouses, lakehouses), machine learning, and modern GenAI (RAG, agents, fine-tuning) — shipped, not just notebooks.
-- **Impact at scale.** At a public institution I modernized the data stack, cut costs, and turned data into decisions that inform a 9-figure budget across thousands of users.
-- **Unusual edge:** a background in **Psychology** + a builder's history (full-stack founder) → I read both the system and the people using it.
+- 🏛️ Modernized the data stack of **a public institution managing a R$100M+ budget** — resilience and reliability for systems thousands of people depend on.
+- 💰 **Cut ~R$200k/year** in operating costs with reproducible ELT pipelines.
+- 📊 Built **AI + NLP** analytics products informing decisions for **2,000+ staff serving 2.5M+ citizens**.
+- 🛡️ Shipped **LLMs / RAG to production with guardrails and offline evals** — not demos.
+
+> 💡 *Public portfolio started Jun/2026. 8+ years building data/ML systems in production; the institutional systems above are internal (public sector, under NDA) and can't be open-sourced — these repos are where I build in the open.*
+
+### 📌 Featured projects
+
+| Project | What it is | Domain |
+|---|---|---|
+| **[QuantLens](https://github.com/Rodrigo-Palma/quantlens)** | Production-grade **local-LLM quant analyst** for the B3 stock market — RAG + guardrails + offline evals in CI, with a measured benchmark table. | GenAI / AI Eng |
+| **[anchora](https://github.com/Rodrigo-Palma/anchora)** | Offline **RAG over Brazilian public-law** documents — cited answers, domain-grounded. | GenAI / Retrieval |
+| **[DocLens](https://github.com/Rodrigo-Palma/doclens)** | Fully offline **RAG over your documents**, every answer cited — runs on Ollama. | GenAI / Retrieval |
+| **[market-elt](https://github.com/Rodrigo-Palma/market-elt)** | Reproducible **DuckDB + dbt** ELT with data-quality tests — end to end, zero infra. | Data Eng |
+
+### 🧠 Background that makes me different
+
+Psychologist → full-stack founder → senior data/AI engineer. **MSc in Big Data &amp; Business Intelligence.**
+I read product, behavior and data at the same time — a rare combination in an engineer.
 
 ### 🔭 Currently
 
-Building **local-first AI** — RAG, agents and LoRA fine-tuning on local models (Ollama) — and **reproducible data pipelines**. See the featured projects below.
+Building **local-first AI** — RAG, agents and **LoRA fine-tuning** on local models (Ollama) — and **reproducible data platforms**, with engineering rigor (CI, tests, evals, measured results).
 
 ### 🛠️ Tech
 
@@ -31,17 +48,12 @@ Building **local-first AI** — RAG, agents and LoRA fine-tuning on local models
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
 ![Spark](https://img.shields.io/badge/Spark-E25A1C?style=flat&logo=apachespark&logoColor=white)
 ![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat&logo=dbt&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat&logo=duckdb&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white)
-
-### 📌 Featured projects
-
-- **[QuantLens](https://github.com/Rodrigo-Palma/quantlens)** — AI quant analyst for B3: quant signals explained by a **local-first LLM**, grounded by RAG, with guardrails + offline evals in CI. *(GenAI / AI Engineering)*
-- **[DocLens](https://github.com/Rodrigo-Palma/doclens)** — local-first **RAG** over your documents with **cited answers**, running fully offline on Ollama (deterministic fallback for CI). *(GenAI / Retrieval)*
-- **[market-elt](https://github.com/Rodrigo-Palma/market-elt)** — reproducible **DuckDB + dbt** ELT pipeline with data-quality tests, runnable with zero infrastructure. *(Data Engineering)*
 
 ### 🎓 Certifications
 
@@ -50,10 +62,6 @@ Building **local-first AI** — RAG, agents and LoRA fine-tuning on local models
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Rodrigo-Palma&show_icons=true&hide_border=true&count_private=true" alt="GitHub stats" height="160"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rodrigo-Palma&layout=compact&hide_border=true" alt="Top languages" height="160"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Rodrigo-Palma&hide_border=true" alt="GitHub streak" height="160"/>
 </p>
 
 <p align="center"><i>Open to remote opportunities — let's talk on <a href="https://linkedin.com/in/rodrigospalma/">LinkedIn</a>.</i></p>
