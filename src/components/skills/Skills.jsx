@@ -1,93 +1,73 @@
 import React from "react";
-import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
 
-const skillContent = [
+// Recruiter-friendly: grouped skills, no self-assigned proficiency scores or bars.
+const skillGroups = [
   {
-    name: "● AI / LLMs ● RAG ● Agents ● Fine-tuning",
-    numberPercent: "93",
-    startCount: "0",
-    endCount: "93",
+    title: "AI / GenAI",
+    items: ["LLMs", "RAG", "Agents", "LoRA fine-tuning", "LLM Evals", "Guardrails", "Vector DBs"],
   },
   {
-    name: "● Machine Learning ● Deep Learning (PyTorch)",
-    numberPercent: "90",
-    startCount: "0",
-    endCount: "90",
+    title: "Machine Learning",
+    items: ["PyTorch", "scikit-learn", "XGBoost", "Time Series", "NLP"],
   },
   {
-    name: "● Programming (Python, SQL, JavaScript/TypeScript)",
-    numberPercent: "92",
-    startCount: "0",
-    endCount: "92",
+    title: "Data Engineering",
+    items: ["Spark", "dbt", "Airflow", "DuckDB", "Kafka", "Warehouses / Lakehouses"],
   },
   {
-    name: "● Data Engineering ● Spark ● dbt ● Airflow ● Kafka",
-    numberPercent: "90",
-    startCount: "0",
-    endCount: "90",
+    title: "MLOps & Cloud",
+    items: ["Docker", "Kubernetes", "Terraform", "MLflow", "CI/CD", "AWS", "Azure"],
   },
   {
-    name: "● MLOps ● Docker ● Kubernetes ● CI/CD ● MLflow",
-    numberPercent: "88",
-    startCount: "0",
-    endCount: "88",
+    title: "Languages",
+    items: ["Python", "SQL", "JavaScript / TypeScript"],
   },
   {
-    name: "● Cloud ● AWS ● Azure",
-    numberPercent: "88",
-    startCount: "0",
-    endCount: "88",
-  },
-  {
-    name: "● Data Visualization ● Power BI ● Microsoft Fabric",
-    numberPercent: "92",
-    startCount: "0",
-    endCount: "92",
+    title: "BI",
+    items: ["Power BI", "Microsoft Fabric"],
   },
 ];
 
-const Skills = () => {
-  const [focus, setFocus] = React.useState(false);
-  return (
-    <>
-      <div className="skill-wrapper">
-        {skillContent.map((skill, i) => (
-          <div className="skill-lt" key={i}>
-            <h6>{skill.name}</h6>
-            <span className="count-inner">
-              {<CountUp
-                start={focus ? skill.startCount : null}
-                end={skill.endCount}
-                duration={1}
-                redraw={true}
-              >
-                {({ countUpRef }) => (
-                  <VisibilitySensor
-                    onChange={(isVisible) => {
-                      if (isVisible) {
-                        setFocus(true);
-                      }
-                    }}
-                  >
-                    <span ref={countUpRef} />
-                  </VisibilitySensor>
-                )}
-                  </CountUp>
-              }
-            </span>
-            <div className="skill-bar">
-              <div
-                className="skill-bar-in"
-                style={{ width: skill.numberPercent + "%" }}
-              ></div>
-            </div>
-          </div>
-          // End skill-lt
-        ))}
-      </div>
-    </>
-  );
+const pillStyle = {
+  display: "inline-block",
+  padding: "5px 13px",
+  margin: "0 6px 8px 0",
+  fontSize: "14px",
+  lineHeight: 1.4,
+  borderRadius: "20px",
+  color: "#e6edf3",
+  background: "rgba(255, 255, 255, 0.05)",
+  border: "1px solid rgba(255, 255, 255, 0.16)",
+  whiteSpace: "nowrap",
 };
+
+const titleStyle = {
+  display: "inline-block",
+  margin: "0 0 10px",
+  paddingBottom: "4px",
+  fontSize: "13px",
+  fontWeight: 700,
+  letterSpacing: "1.5px",
+  textTransform: "uppercase",
+  color: "#f9a23c",
+  borderBottom: "2px solid rgba(249, 162, 60, 0.35)",
+};
+
+const Skills = () => (
+  <div className="skills-grouped">
+    {skillGroups.map((group, i) => (
+      <div className="skill-group" key={i} style={{ marginBottom: "20px" }}>
+        <h6 style={titleStyle}>{group.title}</h6>
+        <div>
+          {group.items.map((item, j) => (
+            <span key={j} style={pillStyle}>
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+);
 
 export default Skills;
