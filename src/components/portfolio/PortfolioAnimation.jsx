@@ -27,7 +27,7 @@ const projects = [
     cats: ["AI / GenAI"],
   },
   {
-    img: "/img/portfolio/anchora.svg",
+    img: "/img/portfolio/anchora.png",
     width: 1200,
     height: 675,
     title: "anchora — Offline RAG for Brazilian Public-Law",
