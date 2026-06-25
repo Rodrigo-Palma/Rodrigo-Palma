@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Rodrigo Stachlewski Palma — CV</title>
+<style>
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #1f2937; font-size: 10pt; line-height: 1.4;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  a { color: #2563eb; text-decoration: none; }
+  h1 { font-size: 23pt; font-weight: 800; letter-spacing: -0.5px; color: #111827; }
+  .role { font-size: 12.5pt; font-weight: 700; color: #2563eb; margin-top: 2px; }
+  .contact { font-size: 9pt; color: #6b7280; margin-top: 6px; }
+  .contact a { color: #6b7280; }
+  hr { border: none; border-top: 2px solid #2563eb; margin: 9px 0 11px; }
+  .summary { font-size: 9.7pt; color: #374151; }
+  h2 {
+    font-size: 10.5pt; font-weight: 800; letter-spacing: 1.5px; color: #2563eb;
+    text-transform: uppercase; margin: 13px 0 7px;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 26px; row-gap: 4px; }
+  .skill b { color: #111827; }
+  .exp-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .exp-title { font-weight: 700; color: #111827; }
+  .exp-org { color: #2563eb; font-weight: 700; }
+  .exp-date { font-size: 8.8pt; color: #6b7280; white-space: nowrap; }
+  ul { margin: 2px 0 7px 16px; }
+  li { margin-bottom: 1.5px; }
+  .proj { margin-bottom: 3px; }
+  .proj b { color: #111827; }
+  .edu-row { display: flex; justify-content: space-between; }
+  .edu-row .yr { color: #6b7280; font-size: 8.8pt; white-space: nowrap; padding-left: 12px; }
+  .muted { color: #6b7280; }
+</style>
+</head>
+<body>
+
+  <h1>Rodrigo Stachlewski Palma</h1>
+  <div class="role">Senior Data &amp; AI Engineer</div>
+  <div class="contact">
+    email.rodrigopalma@gmail.com &nbsp;·&nbsp;
+    <a href="https://linkedin.com/in/rodrigospalma">linkedin.com/in/rodrigospalma</a> &nbsp;·&nbsp;
+    <a href="https://github.com/Rodrigo-Palma">github.com/Rodrigo-Palma</a> &nbsp;·&nbsp;
+    Porto Alegre, Brazil — open to remote / relocation
+  </div>
+  <hr/>
+
+  <div class="summary">
+    Senior Data &amp; AI Engineer who builds end-to-end systems — from data pipelines and
+    warehouses to machine learning and modern GenAI (RAG, agents, LoRA fine-tuning) — and ships
+    them to production with engineering rigor (CI, tests, evals). Azure Data Scientist (DP-100)
+    &amp; Microsoft Fabric (DP-600) certified; MSc in Big Data &amp; BI.
+  </div>
+
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="skill"><b>AI / GenAI:</b> LLMs, RAG, agents, LoRA fine-tuning, LLM evals, guardrails, vector DBs</div>
+    <div class="skill"><b>Machine Learning:</b> PyTorch, scikit-learn, XGBoost, time series, NLP</div>
+    <div class="skill"><b>Data Engineering:</b> Spark, dbt, Airflow, DuckDB, Kafka, warehouses / lakehouses</div>
+    <div class="skill"><b>MLOps / Cloud:</b> Docker, Kubernetes, Terraform, MLflow, CI/CD, AWS, Azure</div>
+    <div class="skill"><b>Languages:</b> Python, SQL, JavaScript / TypeScript</div>
+    <div class="skill"><b>BI:</b> Power BI, Microsoft Fabric</div>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="exp-head">
+    <div><span class="exp-title">Senior Data &amp; AI Engineer</span> — <span class="exp-org">Public Defender's Office of Rio Grande do Sul (DPE-RS)</span></div>
+    <div class="exp-date">2024 – Present</div>
+  </div>
+  <ul>
+    <li>Modernized the data stack (resilience &amp; reliability); built interactive dashboards powered by AI and NLP.</li>
+    <li>Shipped production RAG with cited answers and local LLMs (guardrails + offline evals) for sensitive data.</li>
+    <li>Cut ~R$200k/year (≈US$37k) in operating costs through pipeline optimization and resource right-sizing.</li>
+    <li>Built ETL pipelines unlocking previously unavailable data and quantified staff productivity — informing a R$100M+ (≈US$18.5M) budget at an institution delivering 2.65M+ legal-aid services/year.</li>
+  </ul>
+
+  <div class="exp-head">
+    <div><span class="exp-title">Judicial Technician</span> — <span class="exp-org">Court of Justice of Rio Grande do Sul (TJRS)</span></div>
+    <div class="exp-date">2017 – 2024</div>
+  </div>
+  <ul>
+    <li>7 years inside the Brazilian justice system — deep public-sector / legal domain context.</li>
+  </ul>
+
+  <div class="exp-head">
+    <div><span class="exp-title">Co-founder &amp; Full-Stack Developer</span> — <span class="exp-org">JogoMuitoOnline (Palma &amp; Oliveira Ltda)</span></div>
+    <div class="exp-date">2009 – 2014</div>
+  </div>
+  <ul>
+    <li>Built and ran an e-commerce business end to end: web development, cloud infrastructure and payments — ~5 years shipping full-stack software as a founder.</li>
+  </ul>
+
+  <h2>Selected Projects</h2>
+  <div class="proj"><b>QuantLens</b> — AI quant analyst for B3: local-first LLM + RAG + guardrails + measured evals. <a href="https://github.com/Rodrigo-Palma/quantlens">github.com/Rodrigo-Palma/quantlens</a></div>
+  <div class="proj"><b>anchora</b> — offline RAG over Brazilian public-law documents, cited &amp; domain-grounded answers. <a href="https://github.com/Rodrigo-Palma/anchora">github.com/Rodrigo-Palma/anchora</a></div>
+  <div class="proj"><b>DocLens</b> — local-first RAG over documents with cited answers, fully offline. <a href="https://github.com/Rodrigo-Palma/doclens">github.com/Rodrigo-Palma/doclens</a></div>
+  <div class="proj"><b>market-elt</b> — reproducible DuckDB + dbt ELT with data-quality tests. <a href="https://github.com/Rodrigo-Palma/market-elt">github.com/Rodrigo-Palma/market-elt</a></div>
+
+  <h2>Education</h2>
+  <div class="edu-row"><div><b>MSc — Big Data &amp; Business Intelligence</b>, <span class="muted">ENEB (European Business School of Barcelona)</span></div><div class="yr">2023–2025</div></div>
+  <div class="edu-row"><div><b>BSc — Computer Engineering</b>, <span class="muted">Universidade Cruzeiro do Sul</span></div><div class="yr">2020–2024</div></div>
+  <div class="edu-row"><div><b>MBA — Technology for Business: AI, Data Science &amp; Big Data</b>, <span class="muted">Faculdade Única</span></div><div class="yr">2022–2023</div></div>
+  <div class="edu-row"><div><b>Postgraduate — Artificial Intelligence</b>, <span class="muted">Faculdade Iguaçu</span></div><div class="yr">2023</div></div>
+
+  <h2>Certifications</h2>
+  <div>Microsoft Certified: Azure Data Scientist Associate (DP-100) · Fabric Analytics Engineer Associate (DP-600) · Power BI Data Analyst Associate (PL-300) · Certified Associate in Project Management (CAPM, PMI)</div>
+
+</body>
+</html>
