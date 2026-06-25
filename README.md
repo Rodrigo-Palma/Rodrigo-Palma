@@ -59,9 +59,4 @@ Building **local-first AI** — RAG, agents and **LoRA fine-tuning** on local mo
 
 `Azure Data Scientist Associate (DP-100)` · `Fabric Analytics Engineer (DP-600)` · `Power BI Data Analyst (PL-300)` · `Certified Associate in Project Management (CAPM)`
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Rodrigo-Palma&show_icons=true&hide_border=true&count_private=true" alt="GitHub stats" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rodrigo-Palma&layout=compact&hide_border=true" alt="Top languages" height="160"/>
-</p>
-
 <p align="center"><i>Open to remote opportunities — let's talk on <a href="https://linkedin.com/in/rodrigospalma/">LinkedIn</a>.</i></p>
