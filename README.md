@@ -8,7 +8,6 @@
 
 <p align="center">
   <a href="https://linkedin.com/in/rodrigospalma/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <img src="https://komarev.com/ghpvc/?username=Rodrigo-Palma&style=for-the-badge&color=0A66C2&label=Profile+views" alt="Profile views"/>
 </p>
 
 ---
