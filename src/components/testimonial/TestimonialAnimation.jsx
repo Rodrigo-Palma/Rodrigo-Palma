@@ -32,31 +32,14 @@ export default function SimpleSlider() {
 
   const TestimonilContent = [
     {
-      imageName: "team-1",
-      desc: `  Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s.`,
-      reviewerName: "Nancy Byers",
-      designation: "CEO at ib-themes",
+      initials: "FD",
+      desc: `Every point Rodrigo raised on methodological rigor was always well-placed
+      and measured, explaining seemingly unreachable details in accessible terms. The
+      unanimous view of the public defenders involved was that we were dealing with
+      someone simply outstanding.`,
+      reviewerName: "Felipe Drummond",
+      designation: "Public Defender — DPE-RS",
       delayAnimation: "",
-    },
-    {
-      imageName: "team-2",
-      desc: ` Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s.`,
-      reviewerName: "Jara Afsari",
-      designation: "CEO at ib-themes",
-      delayAnimation: "200",
-    },
-    {
-      imageName: "team-4",
-      desc: ` Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s.`,
-      reviewerName: "Janiaya kiaram",
-      designation: "Visual Designer",
-      delayAnimation: "400",
     },
   ];
 
@@ -72,10 +55,30 @@ export default function SimpleSlider() {
           >
             <div className="testimonial-01 media">
               <div className="avatar">
-                <img
-                  src={`img/testimonial/${val.imageName}.jpg`}
-                  alt="review comments"
-                ></img>
+                {val.imageName ? (
+                  <img
+                    src={`img/testimonial/${val.imageName}.jpg`}
+                    alt="review comments"
+                  ></img>
+                ) : (
+                  <div
+                    aria-hidden="true"
+                    style={{
+                      width: 60,
+                      height: 60,
+                      borderRadius: "50%",
+                      background: "#2563eb",
+                      color: "#fff",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontWeight: 700,
+                      fontSize: 20,
+                    }}
+                  >
+                    {val.initials}
+                  </div>
+                )}
               </div>
               <div className="media-body">
                 <p>{val.desc}</p>

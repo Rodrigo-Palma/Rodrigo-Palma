@@ -1,6 +1,6 @@
 import React from "react";
 import Social from "../Social";
-//import Testimonials from "../testimonial/TestimonialAnimation";
+import Testimonials from "../testimonial/TestimonialAnimation";
 import Services from "../service/ServiceAnimation";
 import Awards from "../award/AwardsAnimation";
 
@@ -146,7 +146,7 @@ const About = () => {
 
           {/* End separated */}
 
-          {/*<div className="title">
+          <div className="title">
             <h3>Recomendações.</h3>
           </div>
 
