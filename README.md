@@ -18,6 +18,7 @@
 - 💰 **Cut ~R$200k/year** in operating costs with reproducible ELT pipelines.
 - 📊 Built **AI + NLP** analytics products informing decisions for **2,000+ staff** at an institution that delivered **2.65M+ legal-aid services in 2025**.
 - 🛡️ Shipped **LLMs / RAG to production with guardrails and offline evals** — not demos.
+- 🏆 Co-designed an **award-winning** analytics product that fairly benchmarks workload across units of a public institution — **2nd place** at a national public-sector innovation congress (2026).
 
 > 💡 *Public portfolio started Jun/2026. 8+ years building data/ML systems in production; the institutional systems above are internal (public sector, under NDA) and can't be open-sourced — these repos are where I build in the open.*
 
