@@ -5,13 +5,29 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 export default function SimpleSlider() {
+  const TestimonilContent = [
+    {
+      initials: "FD",
+      desc: `Every point Rodrigo raised on methodological rigor was always well-placed
+      and measured, explaining seemingly unreachable details in accessible terms. The
+      unanimous view of the public defenders involved was that we were dealing with
+      someone simply outstanding.`,
+      reviewerName: "Felipe Drummond",
+      designation: "Public Defender — DPE-RS",
+      delayAnimation: "",
+    },
+  ];
+
+  // Avoid react-slick cloning a single slide to fill the track (which renders
+  // the same testimonial twice). Cap visible slides to the number of items.
+  const slidesToShow = Math.min(2, TestimonilContent.length);
   const settings = {
-    dots: true,
+    dots: TestimonilContent.length > slidesToShow,
     arrow: false,
-    infinite: true,
+    infinite: TestimonilContent.length > slidesToShow,
     speed: 900,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow,
+    slidesToScroll: slidesToShow,
     autoplay: false,
     margin: 30,
     responsive: [
@@ -29,19 +45,6 @@ export default function SimpleSlider() {
       },
     ],
   };
-
-  const TestimonilContent = [
-    {
-      initials: "FD",
-      desc: `Every point Rodrigo raised on methodological rigor was always well-placed
-      and measured, explaining seemingly unreachable details in accessible terms. The
-      unanimous view of the public defenders involved was that we were dealing with
-      someone simply outstanding.`,
-      reviewerName: "Felipe Drummond",
-      designation: "Public Defender — DPE-RS",
-      delayAnimation: "",
-    },
-  ];
 
   return (
     <div className="testimonial-wrapper">
