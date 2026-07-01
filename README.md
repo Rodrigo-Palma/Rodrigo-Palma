@@ -28,7 +28,6 @@
 |---|---|---|
 | **[QuantLens](https://github.com/Rodrigo-Palma/quantlens)** | Production-grade **local-LLM quant analyst** for the B3 stock market — RAG + guardrails + offline evals in CI, with a measured benchmark table. | GenAI / AI Eng |
 | **[anchora](https://github.com/Rodrigo-Palma/anchora)** | Offline **RAG over Brazilian public-law** documents — cited answers, domain-grounded. | GenAI / Retrieval |
-| **[DocLens](https://github.com/Rodrigo-Palma/doclens)** | Fully offline **RAG over your documents**, every answer cited — runs on Ollama. | GenAI / Retrieval |
 | **[market-elt](https://github.com/Rodrigo-Palma/market-elt)** | Reproducible **DuckDB + dbt** ELT with data-quality tests — end to end, zero infra. | Data Eng |
 
 ### 🧠 Background that makes me different

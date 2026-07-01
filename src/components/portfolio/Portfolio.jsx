@@ -26,16 +26,6 @@ const projects = [
     cats: ["AI / GenAI"],
   },
   {
-    img: "/img/portfolio/doclens.png",
-    width: 1200,
-    height: 675,
-    title: "DocLens — Local RAG with Cited Answers",
-    subTitle: "Offline RAG over documents (Ollama)",
-    alterText: "AI / GenAI",
-    portfolioLink: "https://github.com/Rodrigo-Palma/doclens",
-    cats: ["AI / GenAI"],
-  },
-  {
     img: "/img/portfolio/market-elt.png",
     width: 1200,
     height: 675,
