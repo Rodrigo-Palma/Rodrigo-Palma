@@ -16,7 +16,8 @@ jobs:
           node-version: 20
           cache: npm
       - name: Install dependencies
-        run: npm ci
+        # react-text-loop pins a pre-18 React peer range; the app itself runs on 18.
+        run: npm ci --legacy-peer-deps
       - name: Build
         run: npm run build
         env:
