@@ -16,7 +16,8 @@ I fix bugs in the tools I use at work. 16 pull requests merged so far, in
 [polars](https://github.com/pola-rs/polars/pulls?q=is%3Apr+author%3ARodrigo-Palma),
 [delta-rs](https://github.com/delta-io/delta-rs/pulls?q=is%3Apr+author%3ARodrigo-Palma) and
 [iceberg-python](https://github.com/apache/iceberg-python/pulls?q=is%3Apr+author%3ARodrigo-Palma),
-with more still open in huggingface/datasets, mlflow, pandera, litellm and lm-evaluation-harness.
+with more still open in huggingface/datasets, mlflow, pandera, litellm, sqlmesh, dspy
+and lm-evaluation-harness.
 Everything, merged and open:
 [search](https://github.com/search?q=is%3Apr+author%3ARodrigo-Palma&type=pullrequests).
 
@@ -29,8 +30,8 @@ Three that show the kind of bug I go after:
   became a deletion candidate for `vacuum`.
 - [iceberg-python #3995](https://github.com/apache/iceberg-python/pull/3995). Rewriting a
   predicate to DNF distributed every `AND` over the `OR`s below it with nothing bounding the
-  result. Twenty two-branch groups, roughly 40 predicates and a plausible size for a filter
-  built from user input, expanded to 1,048,576 terms in 16.9s and about 1 GiB. The same input
+  result. Twenty groups of two branches, about 40 predicates in all and a plausible size for a
+  filter built from user input, expanded to 1,048,576 terms in 16.9s and about 1 GiB. The same input
   now fails in 0.22s against an explicit limit.
 - [great-tables #869](https://github.com/posit-dev/great-tables/pull/869). `date_style="iso"`
   used the CLDR pattern `y`, which has no minimum width, so the year 999 rendered as
@@ -43,10 +44,11 @@ and reading what a function's name promises against what the body actually does.
 
 [quantlens](https://github.com/Rodrigo-Palma/quantlens) is a quant analyst over B3 (Brazilian
 exchange) data running entirely on local models. Retrieval with guardrails, an offline eval
-suite that CI enforces as a gate, and a benchmark that fails the build on regression (offline
-pipeline end to end, p50 441 µs). Local models were a deliberate trade: no per-query cost and
+suite that CI enforces as a gate, and a benchmark that fails the build on regression (the offline
+path end to end, no LLM call, p50 441 µs). Local models were a deliberate trade: no per-query cost and
 no data leaving the machine, paid for with weaker generation, which is why the guardrails and
-the evals exist at all. The decisions behind it are written down in `docs/adr/`.
+the evals exist at all. The decisions behind it are written down as
+[ADRs](https://github.com/Rodrigo-Palma/quantlens/tree/main/docs/adr).
 
 [anchora](https://github.com/Rodrigo-Palma/anchora) is retrieval over Brazilian public-law
 documents, where an answer either carries its citations or abstains. My first fine-tune scored
@@ -69,7 +71,8 @@ R$85 million a year in compensation to public defenders. A wrong number there is
 it is somebody's pay, so most of the engineering went into making the comparison between units
 hold up when a unit disputes its own result. I am a co-author on it: the criterion for comparing
 units across defensorias came from a public defender, not from engineering. Second place in
-digital innovation at the 2nd CNTI.Def / 5th Enastic, 2026.
+digital innovation at the 2nd CNTI.Def / 5th Enastic, the Brazilian public-defender technology
+conference, 2026.
 
 ### Before that
 
