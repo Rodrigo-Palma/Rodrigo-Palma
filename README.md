@@ -10,14 +10,18 @@ actually evaluate, and gates that stop a worse model from shipping.
 
 ### Upstream open source
 
-I fix bugs in the tools I use at work. 16 pull requests merged so far, in
-[great-tables](https://github.com/posit-dev/great-tables/pulls?q=is%3Apr+author%3ARodrigo-Palma) (11),
-[fsspec](https://github.com/fsspec/filesystem_spec/pulls?q=is%3Apr+author%3ARodrigo-Palma) (2),
-[polars](https://github.com/pola-rs/polars/pulls?q=is%3Apr+author%3ARodrigo-Palma),
-[delta-rs](https://github.com/delta-io/delta-rs/pulls?q=is%3Apr+author%3ARodrigo-Palma) and
-[iceberg-python](https://github.com/apache/iceberg-python/pulls?q=is%3Apr+author%3ARodrigo-Palma),
-with more still open in huggingface/datasets, mlflow, pandera, litellm, sqlmesh, dspy
-and lm-evaluation-harness.
+I fix bugs in the tools I use at work. 28 pull requests merged so far, in
+[great-tables](https://github.com/posit-dev/great-tables/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (12),
+[fsspec](https://github.com/fsspec/filesystem_spec/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (5),
+[iceberg-python](https://github.com/apache/iceberg-python/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (3),
+[tox](https://github.com/tox-dev/tox/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (2),
+[delta-rs](https://github.com/delta-io/delta-rs/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (2),
+[Pillow](https://github.com/python-pillow/Pillow/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[polars](https://github.com/pola-rs/polars/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[onnx](https://github.com/onnx/onnx/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) and
+[feast](https://github.com/feast-dev/feast/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+with more still open in huggingface/datasets, mlflow, pandera, litellm, kedro, sqlmesh,
+dspy and lm-evaluation-harness.
 Everything, merged and open:
 [search](https://github.com/search?q=is%3Apr+author%3ARodrigo-Palma&type=pullrequests).
 
