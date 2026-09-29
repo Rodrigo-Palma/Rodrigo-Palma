@@ -10,7 +10,7 @@ actually evaluate, and gates that stop a worse model from shipping.
 
 ### Upstream open source
 
-I fix bugs in the tools I use at work. 40 pull requests merged so far, in
+I fix bugs in the tools I use at work. 41 pull requests merged so far, in
 [great-tables](https://github.com/posit-dev/great-tables/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (12),
 [fsspec](https://github.com/fsspec/filesystem_spec/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (6),
 [iceberg-python](https://github.com/apache/iceberg-python/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (3),
@@ -21,15 +21,16 @@ I fix bugs in the tools I use at work. 40 pull requests merged so far, in
 and one each in
 [apprise](https://github.com/caronc/apprise/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [cachetools](https://github.com/tkem/cachetools/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[kedro](https://github.com/kedro-org/kedro/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [nox](https://github.com/wntrblm/nox/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [onnx](https://github.com/onnx/onnx/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [Pillow](https://github.com/python-pillow/Pillow/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [plotnine](https://github.com/has2k1/plotnine/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [polars](https://github.com/pola-rs/polars/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) and
 [redis-py](https://github.com/redis/redis-py/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
-with 37 more open across 24 projects, including four each in litellm and kedro,
-three each in huggingface/datasets and pandera, and two each in iceberg-python,
-mlflow and pint.
+with 36 more open across 24 projects, including four in litellm, three each in
+kedro, pandera and huggingface/datasets, and two each in iceberg-python, mlflow
+and pint.
 Everything, merged and open:
 [search](https://github.com/search?q=is%3Apr+author%3ARodrigo-Palma&type=pullrequests).
 
