@@ -3,6 +3,17 @@ import Skills from "../skills/Skills";
 
 const resumeContent = [
   {
+    jobPosition: `Open Source Contributor`,
+    jobType: `Remote`,
+    jobDuration: `2026 - Present`,
+    timeDuraton: `Part-time`,
+    compnayName: "Upstream Python data and AI tooling",
+    jobDescription: `49 pull requests merged across 20 projects, including great-tables,
+    fsspec, Apache Iceberg (iceberg-python), Delta Lake (delta-rs), tox, kedro, feast,
+    Pillow and polars. Bug fixes found by checking what a function promises against what
+    it does, each with a regression test.`,
+  },
+  {
     jobPosition: `Data & AI Engineer`,
     jobType: `On-site | Remote`,
     jobDuration: `2024 - Present`,
@@ -12,7 +23,9 @@ const resumeContent = [
     interactive dashboards powered by AI and NLP. Designed new ETL pipelines that unlocked
     previously unavailable data, and quantified the productivity of staff with real data to
     support decisions informing a 9-figure budget. Drove a data-driven culture across the
-    organization.`,
+    organization. Responsible for and co-author of the system that allocates more than R$85
+    million a year in caseload compensation to public defenders, which took second place in
+    digital innovation at the 2nd CNTI.Def / 5th Enastic (2026).`,
   },
   {
     jobPosition: `Judicial Technician`,

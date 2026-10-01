@@ -8,8 +8,8 @@ const AwardContnet = [
     delayAnimation: "0",
   },
   {
-    img: "dp500",
-    awardName: "Azure Enterprise Data Analyst Associate",
+    img: "dp600",
+    awardName: "Fabric Analytics Engineer Associate",
     awardFor: "by Microsoft",
     delayAnimation: "150",
   },
