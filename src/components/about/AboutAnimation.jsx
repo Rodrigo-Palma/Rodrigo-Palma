@@ -147,7 +147,7 @@ const About = () => {
           {/* End separated */}
 
           <div className="title">
-            <h3>Recomendações.</h3>
+            <h3>From code review.</h3>
           </div>
 
           <Testimonials />
