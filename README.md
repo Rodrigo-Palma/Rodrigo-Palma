@@ -80,10 +80,13 @@ the evals exist at all. The decisions behind it are written down as
 [anchora](https://github.com/Rodrigo-Palma/anchora) is retrieval over Brazilian public-law
 documents, where an answer either carries its citations or abstains. My first fine-tune scored
 0.92 and the number was wrong, because the split I measured on overlapped with training. On a
-clean holdout the honest numbers are 0.818 citation correctness and 0.833 abstention, against
-0.500 and 0.167 for the base model with few-shot prompting. `make eval-honest` reproduces every
-arm from frozen generations with no GPU, and the promotion gate rejects the more cautious
-10-example adapter because its citation accuracy falls to 0.636.
+clean holdout of 28 questions the adapter cites correctly on 18 of 22 answerable ones (0.818)
+and abstains on 5 of the 6 that are out of corpus (0.833), against 11 of 22 and 1 of 6 for the
+base model with few-shot prompting. At that size the 95% intervals still overlap, so it shows
+the direction, not a settled gap. `make eval-honest` reproduces every arm from frozen
+generations with no GPU, and the promotion gate demonstrates the mechanism: it rejects a more
+cautious 10-example adapter that drops to 14 of 22, a four-question difference that is within
+noise here.
 
 [market-elt](https://github.com/Rodrigo-Palma/market-elt) is market-data ELT on dbt and DuckDB,
 where data-quality tests break the build instead of letting bad rows travel downstream.
