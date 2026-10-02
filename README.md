@@ -10,32 +10,30 @@ actually evaluate, and gates that stop a worse model from shipping.
 
 ### Upstream open source
 
-I fix bugs in the tools I use at work. 49 pull requests merged so far, in
-[great-tables](https://github.com/posit-dev/great-tables/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (12),
-[fsspec](https://github.com/fsspec/filesystem_spec/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (7),
-[iceberg-python](https://github.com/apache/iceberg-python/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (3),
-[delta-rs](https://github.com/delta-io/delta-rs/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (3),
-[tox](https://github.com/tox-dev/tox/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (3),
-[kedro](https://github.com/kedro-org/kedro/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (3),
-[feast](https://github.com/feast-dev/feast/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (3),
-[py-shiny](https://github.com/posit-dev/py-shiny/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (2),
-[pint](https://github.com/hgrecco/pint/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) (2),
-and one each in
+I fix bugs in the tools I use at work. More than 50 pull requests merged in 20 projects,
+with repeat merges from the same maintainers in great-tables, fsspec, Apache Iceberg, Delta Lake,
+tox, kedro and feast. All of them, merged only:
+[great-tables](https://github.com/posit-dev/great-tables/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[fsspec](https://github.com/fsspec/filesystem_spec/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[iceberg-python](https://github.com/apache/iceberg-python/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[delta-rs](https://github.com/delta-io/delta-rs/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[tox](https://github.com/tox-dev/tox/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[kedro](https://github.com/kedro-org/kedro/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[feast](https://github.com/feast-dev/feast/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[Pillow](https://github.com/python-pillow/Pillow/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[redis-py](https://github.com/redis/redis-py/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[py-shiny](https://github.com/posit-dev/py-shiny/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[pint](https://github.com/hgrecco/pint/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
+[pyjanitor](https://github.com/pyjanitor-devs/pyjanitor/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [apprise](https://github.com/caronc/apprise/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [cachetools](https://github.com/tkem/cachetools/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [nox](https://github.com/wntrblm/nox/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [onnx](https://github.com/onnx/onnx/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [pdm](https://github.com/pdm-project/pdm/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
-[Pillow](https://github.com/python-pillow/Pillow/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
 [plotnine](https://github.com/has2k1/plotnine/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
-[polars](https://github.com/pola-rs/polars/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
-[pyjanitor](https://github.com/pyjanitor-devs/pyjanitor/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
-[redis-py](https://github.com/redis/redis-py/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) and
-[zarr-python](https://github.com/zarr-developers/zarr-python/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged),
-with 42 more open across 32 projects, including four in litellm, three each in
-pandera and huggingface/datasets, and two each in iceberg-python, mlflow and
-urllib3.
-Everything, merged and open:
+[polars](https://github.com/pola-rs/polars/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged) and
+[zarr-python](https://github.com/zarr-developers/zarr-python/pulls?q=is%3Apr+author%3ARodrigo-Palma+is%3Amerged).
+Everything, merged, open and closed:
 [search](https://github.com/search?q=is%3Apr+author%3ARodrigo-Palma&type=pullrequests).
 
 Three that show the kind of bug I go after:
