@@ -69,6 +69,17 @@ internal.
 
 ### Projects
 
+[edgar-rag](https://github.com/Rodrigo-Palma/edgar-rag) answers questions over SEC 10-K filings,
+citing the passage it used or declining. The evaluation was pre-registered: hypotheses, margins
+and arms fixed before the run, on 300 unanswerable questions across 20 companies. With no gate
+the model answered 13 of them (4.3%, Wilson 95% [2.5%, 7.3%]), already under the 5-point margin
+the main hypothesis needed, so it was not attainable on this set and the report says so. A
+period check plus a cosine gate cuts that to 3 of 300 (1.0%) at half the generation time, 6.59s
+against 13.21s per question. The service still ships with no gate, because the hypothesis that
+would have justified one was not met. [anchora](https://github.com/Rodrigo-Palma/anchora) is the
+earlier, smaller version of the same idea over Brazilian public law, with a LoRA fine-tune and a
+28-question holdout.
+
 [quantlens](https://github.com/Rodrigo-Palma/quantlens) is a quant analyst over B3 (Brazilian
 exchange) data running entirely on local models. Retrieval with guardrails, an offline eval
 suite that CI enforces as a gate, and a benchmark that fails the build on regression (the offline
@@ -76,17 +87,6 @@ path end to end, no LLM call, p50 441 µs). Local models were a deliberate trade
 no data leaving the machine, paid for with weaker generation, which is why the guardrails and
 the evals exist at all. The decisions behind it are written down as
 [ADRs](https://github.com/Rodrigo-Palma/quantlens/tree/main/docs/adr).
-
-[anchora](https://github.com/Rodrigo-Palma/anchora) is retrieval over Brazilian public-law
-documents, where an answer either carries its citations or abstains. My first fine-tune scored
-0.92 and the number was wrong, because the split I measured on overlapped with training. On a
-clean holdout of 28 questions the adapter cites correctly on 18 of 22 answerable ones (0.818)
-and abstains on 5 of the 6 that are out of corpus (0.833), against 11 of 22 and 1 of 6 for the
-base model with few-shot prompting. At that size the 95% intervals still overlap, so it shows
-the direction, not a settled gap. `make eval-honest` reproduces every arm from frozen
-generations with no GPU, and the promotion gate demonstrates the mechanism: it rejects a more
-cautious 10-example adapter that drops to 14 of 22, a four-question difference that is within
-noise here.
 
 [market-elt](https://github.com/Rodrigo-Palma/market-elt) is market-data ELT on dbt and DuckDB,
 where data-quality tests break the build instead of letting bad rows travel downstream.
