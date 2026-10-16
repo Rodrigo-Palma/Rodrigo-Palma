@@ -90,8 +90,8 @@ earlier, smaller version of the same idea over Brazilian public law, with a LoRA
 
 [quantlens](https://github.com/Rodrigo-Palma/quantlens) is a quant analyst over B3 (Brazilian
 exchange) data running entirely on local models. Retrieval with guardrails, an offline eval
-suite that CI enforces as a gate, and a benchmark that fails the build on regression (the offline
-path end to end, no LLM call, p50 441 µs). Local models were a deliberate trade: no per-query cost and
+suite that CI enforces as a gate, and an offline-stage latency benchmark that runs in CI (the
+offline path end to end, no LLM call, p50 around 530 µs on an Apple M3 Max). Local models were a deliberate trade: no per-query cost and
 no data leaving the machine, paid for with weaker generation, which is why the guardrails and
 the evals exist at all. The decisions behind it are written down as
 [ADRs](https://github.com/Rodrigo-Palma/quantlens/tree/main/docs/adr).
