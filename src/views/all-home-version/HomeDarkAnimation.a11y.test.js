@@ -5,7 +5,7 @@ import HomeDarkAnimation from "./HomeDarkAnimation";
 
 const renderHome = () =>
   render(
-    <MemoryRouter initialEntries={["/portfolio"]}>
+    <MemoryRouter initialEntries={["/"]}>
       <HomeDarkAnimation />
     </MemoryRouter>
   );

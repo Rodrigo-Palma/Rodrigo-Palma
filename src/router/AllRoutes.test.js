@@ -13,11 +13,17 @@ beforeAll(() => {
   window.scrollTo = () => {};
 });
 
-test("/portfolio renders the home page", () => {
-  renderAt("/portfolio");
+test("/ renders the home page", () => {
+  renderAt("/");
 
   expect(screen.getByRole("heading", { level: 1, name: "Rodrigo Palma" })).toBeTruthy();
   expect(screen.queryByText(/404/)).toBeNull();
+});
+
+test("/portfolio redirects to the home page at /", () => {
+  renderAt("/portfolio");
+
+  expect(screen.getByRole("heading", { level: 1, name: "Rodrigo Palma" })).toBeTruthy();
 });
 
 test("an unknown path renders the NotFound page", () => {

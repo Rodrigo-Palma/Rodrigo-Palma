@@ -14,7 +14,12 @@ const resolve = (url) => {
   const file = url === "/" ? "/index.html" : url;
 
   const before = match(routes.slice(0, fsIndex));
-  if (before) return { status: before.status || 200, dest: before.dest };
+  if (before) {
+    const location = before.headers && before.headers.Location;
+    return location
+      ? { status: before.status, location }
+      : { status: before.status || 200, dest: before.dest };
+  }
   if (fs.existsSync(path.join(publicDir, file)) && fs.statSync(path.join(publicDir, file)).isFile()) {
     return { status: 200, dest: file };
   }
@@ -22,9 +27,13 @@ const resolve = (url) => {
   return after ? { status: after.status || 200, dest: after.dest } : { status: 404 };
 };
 
-test("the SPA routes serve the app shell", () => {
-  ["/", "/portfolio", "/portfolio/"].forEach((url) => {
-    expect(resolve(url)).toEqual({ status: 200, dest: "/index.html" });
+test("the root serves the app shell", () => {
+  expect(resolve("/")).toEqual({ status: 200, dest: "/index.html" });
+});
+
+test("/portfolio permanently redirects to the canonical root", () => {
+  ["/portfolio", "/portfolio/"].forEach((url) => {
+    expect(resolve(url)).toEqual({ status: 301, location: "/" });
   });
 });
 
@@ -46,5 +55,5 @@ test("the static 404 page is accessible and links back to the portfolio", () => 
   expect(html).toMatch(/<title>Page not found \| Rodrigo Palma<\/title>/);
   expect(html).toMatch(/<meta name="robots" content="noindex" \/>/);
   expect(html).toMatch(/<h1>[^<]*404[^<]*<\/h1>/);
-  expect(html).toContain('<a href="/portfolio">');
+  expect(html).toContain('<a href="/">');
 });

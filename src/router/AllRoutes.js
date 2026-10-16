@@ -9,8 +9,8 @@ const AllRoutes = () => {
     <>
       <ScrollTopBehaviour />
       <Routes>
-        <Route path="/" element={<Navigate to="/portfolio" replace />} />
-        <Route path="/portfolio" element={<HomeDarkAnimation />} />
+        <Route path="/" element={<HomeDarkAnimation />} />
+        <Route path="/portfolio" element={<Navigate to="/" replace />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
