@@ -48,19 +48,6 @@ const PortfolioAnimation = () => {
                       data-aos-delay={val.delayAnimation}
                     >
                       <div className="portfolio-img">
-                        <div className="portfolio-info">
-                          <h5>
-                            <a
-                              href={val.portfolioLink}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {val.title}
-                            </a>
-                          </h5>
-                          <span>{val.subTitle}</span>
-                        </div>
-                        {/* End .portfolio-info */}
                         <Item
                           original={val.img}
                           thumbnail={val.img}
@@ -68,23 +55,40 @@ const PortfolioAnimation = () => {
                           height={val.height}
                         >
                           {({ ref, open }) => (
-                            <div className="gallery-link">
+                            <button
+                              type="button"
+                              className="gallery-link"
+                              aria-label={`Enlarge image: ${val.title}`}
+                              onClick={open}
+                            >
                               <img
                                 src={val.img}
                                 alt={val.alt}
                                 width={val.width}
                                 height={val.height}
-                                role="button"
                                 ref={ref}
-                                onClick={open}
                               />
-                            </div>
+                            </button>
                           )}
                         </Item>
+                        <div className="portfolio-info">
+                          <h3>
+                            <a
+                              href={val.portfolioLink}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {val.title}
+                            </a>
+                          </h3>
+                          <span>{val.subTitle}</span>
+                        </div>
+                        {/* End .portfolio-info */}
 
                         <a
                           className="portfolio-icon"
                           href={val.portfolioLink}
+                          aria-label={`${val.title} on GitHub`}
                           target="_blank"
                           rel="noreferrer"
                         >

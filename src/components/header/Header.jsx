@@ -18,8 +18,15 @@ const Header = () => {
     <>
       {/* Header */}
       <div className="mob-header">
-        <button className="toggler-menu" onClick={handleClick}>
-          <div className={click ? "active" : ""}>
+        <button
+          type="button"
+          className="toggler-menu"
+          onClick={handleClick}
+          aria-label="Toggle navigation menu"
+          aria-expanded={click}
+          aria-controls="site-navigation"
+        >
+          <div className={click ? "active" : ""} aria-hidden="true">
             <span></span>
             <span></span>
             <span></span>
@@ -29,7 +36,10 @@ const Header = () => {
       {/* End Header */}
 
       {/* nav bar */}
-      <header className={click ? "header-left menu-open" : "header-left "}>
+      <header
+        id="site-navigation"
+        className={click ? "header-left menu-open" : "header-left "}
+      >
         <div className="scroll-bar">
           <div className="hl-top">
             <div className="hl-logo">
@@ -48,6 +58,7 @@ const Header = () => {
               <a
                 className="nav-link "
                 href="#home"
+                aria-label="Home"
                 data-tip
                 data-for="HOME"
                 onClick={handleClick}
@@ -62,6 +73,7 @@ const Header = () => {
               <a
                 className="nav-link"
                 href="#about"
+                aria-label="About"
                 data-tip
                 data-for="ABOUT"
                 onClick={handleClick}
@@ -76,6 +88,7 @@ const Header = () => {
               <a
                 className="nav-link"
                 href="#resume"
+                aria-label="Experience"
                 data-tip
                 data-for="RESUME"
                 onClick={handleClick}
@@ -95,6 +108,7 @@ const Header = () => {
               <a
                 className="nav-link"
                 href="#work"
+                aria-label="Projects"
                 data-tip
                 data-for="WORK"
                 onClick={handleClick}
@@ -109,6 +123,7 @@ const Header = () => {
               <a
                 className="nav-link"
                 href="#contactus"
+                aria-label="Contact"
                 data-tip
                 data-for="CONTACT"
                 onClick={handleClick}

@@ -157,6 +157,10 @@
   .gallery-link {
     display: block;
     position: relative;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
     cursor: zoom-in !important;
     &::after {
       content: "";
@@ -219,7 +223,7 @@
       padding: 0;
     }
     @include transition(ease all 0.35s);
-    h5 {
+    h3 {
       margin: 0 0 4px;
       color: $px-white;
       font-weight: 500;
@@ -240,7 +244,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     .portfolio-info {
       opacity: 1;
       visibility: visible;
