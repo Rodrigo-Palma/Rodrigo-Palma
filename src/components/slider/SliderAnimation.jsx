@@ -3,7 +3,8 @@ import TextLoop from "react-text-loop";
 
 const conctInfo = {
   phone: "+55 53-99957-7605",
-  email: " email.rodrigopalma@gmail.com",
+  phoneHref: "tel:+5553999577605",
+  email: "email.rodrigopalma@gmail.com",
 };
 
 const sliderContent = {
@@ -22,10 +23,8 @@ const Slider = () => {
       <section id="home" className="home-banner">
         <div className="hb-top-fixed d-flex">
           <div className="hb-info">
-            <a href="tel:+55 (53) 99957-7605">{conctInfo.phone}</a>
-            <a href="mailto:mail%20to:email.rodrigopalma@gmail.com,com">
-              {conctInfo.email}
-            </a>
+            <a href={conctInfo.phoneHref}>{conctInfo.phone}</a>
+            <a href={`mailto:${conctInfo.email}`}>{conctInfo.email}</a>
           </div>
         </div>
         {/* End hp-top-fixed */}
