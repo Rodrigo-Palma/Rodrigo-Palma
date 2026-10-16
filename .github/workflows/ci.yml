@@ -43,6 +43,12 @@ jobs:
         env:
           SKIP_PREFLIGHT_CHECK: "true"
           GENERATE_SOURCEMAP: "false"
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build
+          retention-days: 1
 
   links:
     # Dead links in the README, CV and site sources fail the run (config: lychee.toml).
@@ -64,3 +70,28 @@ jobs:
         env:
           # Authenticated requests avoid GitHub's anonymous rate limit.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  lighthouse:
+    # Accessibility below 0.95 fails; SEO and performance only warn,
+    # since their scores drift on shared runners (config: lighthouserc.json).
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: build
+      - name: Lighthouse CI
+        run: npx --yes @lhci/cli@0.15.1 autorun
+      - name: Upload Lighthouse reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports
+          path: .lighthouseci/reports
+          retention-days: 7

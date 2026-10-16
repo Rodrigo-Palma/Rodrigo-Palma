@@ -25,4 +25,6 @@ yarn-error.log*
 .env
 
 # link checker cache
+
 .lycheecache
+/.lighthouseci
