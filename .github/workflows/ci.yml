@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -40,3 +43,24 @@ jobs:
         env:
           SKIP_PREFLIGHT_CHECK: "true"
           GENERATE_SOURCEMAP: "false"
+
+  links:
+    # Dead links in the README, CV and site sources fail the run (config: lychee.toml).
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: lychee-${{ github.sha }}
+          restore-keys: lychee-
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          lycheeVersion: v0.24.2
+          args: --config lychee.toml README.md cv/resume.html src public/index.html
+          fail: true
+        env:
+          # Authenticated requests avoid GitHub's anonymous rate limit.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
