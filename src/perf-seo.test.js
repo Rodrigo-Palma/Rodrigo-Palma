@@ -120,3 +120,11 @@ test("reviewer avatars declare their size and load lazily", () => {
 test("the et-line icon font does not block text with an invisible period", () => {
   expect(read(root, "src/assets/scss/_et-line-font.scss")).toMatch(/font-display: swap;/);
 });
+
+test("the below-the-fold project gallery is code-split out of the main bundle", () => {
+  const home = read(root, "src/views/all-home-version/HomeDarkAnimation.jsx");
+
+  expect(home).toMatch(/lazy\(\(\) => import\("\.\.\/\.\.\/components\/portfolio\/PortfolioAnimation"\)\)/);
+  expect(home).not.toMatch(/^import .*PortfolioAnimation/m);
+  expect(home).toMatch(/<Suspense[^>]*>\s*<Portfolio \/>/);
+});

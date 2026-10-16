@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { computeAccessibleName } from "dom-accessibility-api";
 import HomeDarkAnimation from "./HomeDarkAnimation";
@@ -15,8 +15,9 @@ const headingLevels = (container) =>
     (el) => Number(el.tagName.slice(1))
   );
 
-test("every link and button has an accessible name", () => {
-  renderHome();
+test("every link and button has an accessible name", async () => {
+  const { container } = renderHome();
+  await waitFor(() => expect(container.querySelector(".portfolio-filter-01")).not.toBeNull());
 
   const unnamed = [...screen.getAllByRole("link"), ...screen.getAllByRole("button")]
     .filter((el) => computeAccessibleName(el).trim() === "")

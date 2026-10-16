@@ -1,14 +1,17 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import Header from "../../components/header/Header";
 import Slider from "../../components/slider/SliderAnimation";
 import About from "../../components/about/AboutAnimation";
 import Resume from "../../components/resume/ResumeAnimation";
-import Portfolio from "../../components/portfolio/PortfolioAnimation";
 import Contact from "../../components/contact/Contact";
 import ContactInfo from "../../components/contact/ContactInfo";
 import Map from "../../components/contact/Map";
 import Footer from "../../components/footer/FooterAnimation";
 import useDocumentTitle from "../../components/useDocumentTitle";
+
+// The project gallery (photoswipe, tabs, masonry) sits below the fold, so it
+// ships in its own chunk instead of the main bundle.
+const Portfolio = lazy(() => import("../../components/portfolio/PortfolioAnimation"));
 
 const HomeOne = () => {
   useDocumentTitle("Rodrigo Palma — Senior Data & AI Engineer");
@@ -35,7 +38,9 @@ const HomeOne = () => {
             <div className="title">
               <h2>Projects</h2>
             </div>
-            <Portfolio />
+            <Suspense fallback={null}>
+              <Portfolio />
+            </Suspense>
           </div>
         </section>
         {/* End Portfolio Section */}
