@@ -24,8 +24,14 @@ img {
   max-width: 100%;
 }
 
-* {
-  outline: none !important;
+// Mouse clicks get no ring; keyboard focus always gets a visible one.
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid $px-theme !important;
+  outline-offset: 3px;
 }
 
 a {

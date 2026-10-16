@@ -26,7 +26,7 @@
   .hl-top {
     a {
       background: $px-theme;
-      color: $px-white;
+      color: $px-dark; // 8.8:1 on the orange; white was 2.2:1
       font-weight: 700;
       letter-spacing: -2px;
       text-decoration: none;
@@ -201,11 +201,16 @@
     display: block;
   }
   .header-left {
-    @include transition(ease all 0.35s);
+    // Hidden (not just off-screen) while closed, so Tab skips its links;
+    // visibility flips after the slide-out and before the slide-in.
+    transition: transform 0.35s ease, visibility 0s linear 0.35s;
     transform: translateX(-100%);
+    visibility: hidden;
     z-index: 222;
     &.menu-open {
       transform: translateX(0);
+      visibility: visible;
+      transition: transform 0.35s ease, visibility 0s;
     }
   }
 }

@@ -25,5 +25,8 @@
     .theme-light & {
       color: $px-dark;
     }
+    a {
+      text-decoration: underline;
+    }
   }
 }
