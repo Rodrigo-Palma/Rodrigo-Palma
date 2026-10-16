@@ -28,7 +28,7 @@ const About = () => {
                 {/* End img */}
                 <div className="info">
                   <p>AI Engineer</p>
-                  <h3>Rodrigo Palma</h3>
+                  <h2>Rodrigo Palma</h2>
                 </div>
                 {/* End info */}
               </div>
@@ -44,7 +44,7 @@ const About = () => {
             >
               <div className="about-info">
                 <div className="title">
-                  <h3>About Me</h3>
+                  <h2>About Me</h2>
                 </div>
                 <div className="about-text">
                   <p>
@@ -109,7 +109,7 @@ const About = () => {
 
           {/* End separated */}
           <div className="title">
-            <h3>What I do</h3>
+            <h2>What I do</h2>
           </div>
 
           <Services />
@@ -128,7 +128,7 @@ const About = () => {
           {/* End separated */}
 
           <div className="title">
-            <h3>Certifications</h3>
+            <h2>Certifications</h2>
           </div>
 
           <Awards />
@@ -147,7 +147,7 @@ const About = () => {
           {/* End separated */}
 
           <div className="title">
-            <h3>From code review.</h3>
+            <h2>From code review.</h2>
           </div>
 
           <Testimonials />

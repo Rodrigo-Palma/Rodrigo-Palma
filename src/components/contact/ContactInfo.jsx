@@ -4,7 +4,7 @@ const ContactInfo = () => {
   return (
     <>
       <div className="contact-info">
-        <h4>Get in touch</h4>
+        <h2>Get in touch</h2>
         <p>
           Open to remote AI / Data Engineering roles worldwide. Feel free to
           reach out — I&apos;d be glad to talk.

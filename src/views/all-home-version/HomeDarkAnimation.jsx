@@ -29,7 +29,7 @@ const HomeOne = () => {
       <section id="work" className="section theme-light dark-bg">
         <div className="container">
           <div className="title">
-            <h3>Projects</h3>
+            <h2>Projects</h2>
           </div>
           <Portfolio />
         </div>

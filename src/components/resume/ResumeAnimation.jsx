@@ -86,7 +86,7 @@ const Resume = () => {
       <section id="resume" className="section">
         <div className="container">
           <div className="title">
-            <h3>Experience</h3>
+            <h2>Experience</h2>
           </div>
           {/* End title */}
           <div className="resume-box">
@@ -101,7 +101,7 @@ const Resume = () => {
                 <div className="row">
                   <div className="col-md-4 col-xl-3">
                     <div className="rb-left">
-                      <h6>{val.jobPosition}</h6>
+                      <h3>{val.jobPosition}</h3>
                       <label>{val.jobType}</label>
                       <p>{val.jobDuration}</p>
                       <div className="rb-time">{val.timeDuraton}</div>
@@ -109,7 +109,7 @@ const Resume = () => {
                   </div>
                   <div className="col-md-8 col-xl-9">
                     <div className="rb-right">
-                      <h6>{val.compnayName}</h6>
+                      <h3>{val.compnayName}</h3>
                       <p>{val.jobDescription}</p>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const Resume = () => {
           {/* End separated */}
 
           <div className="title">
-            <h3>Education &amp; Skills</h3>{" "}
+            <h2>Education &amp; Skills</h2>{" "}
           </div>
 
           <div className="row align-items-center">
@@ -143,7 +143,7 @@ const Resume = () => {
                 {educatonContent.map((val, i) => (
                   <li key={i}>
                     <span>{val.passingYear}</span>
-                    <h6>{val.degreeTitle} </h6>
+                    <h3>{val.degreeTitle} </h3>
                     <p>{val.instituteName}</p>{" "}
                   </li>
                 ))}

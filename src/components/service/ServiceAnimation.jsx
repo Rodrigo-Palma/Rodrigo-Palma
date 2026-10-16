@@ -46,7 +46,7 @@ export default function Service() {
                 <i className={`icon ${val.icon}`}></i>
               </div>
               <div className="feature-content">
-                <h5>{val.title}</h5>
+                <h3>{val.title}</h3>
                 <p>{val.descriptions}</p>
               </div>
             </div>

@@ -57,7 +57,7 @@ const Skills = () => (
   <div className="skills-grouped">
     {skillGroups.map((group, i) => (
       <div className="skill-group" key={i} style={{ marginBottom: "20px" }}>
-        <h6 style={titleStyle}>{group.title}</h6>
+        <h3 style={titleStyle}>{group.title}</h3>
         <div>
           {group.items.map((item, j) => (
             <span key={j} style={pillStyle}>

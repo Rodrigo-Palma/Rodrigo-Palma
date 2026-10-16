@@ -50,7 +50,7 @@ const Awards = () => {
                 <img src={`img/award/${val.img}.jpeg`} alt="award" />
               </div>
               <div className="media-body">
-                <h6>{val.awardName}</h6>
+                <h3>{val.awardName}</h3>
                 <p>{val.awardFor}</p>
               </div>
             </div>
