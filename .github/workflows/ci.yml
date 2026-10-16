@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Single lockfile
         # Vercel installs with npm, so package-lock.json is the only lockfile.
         run: |
@@ -24,7 +24,7 @@ jobs:
             fi
           done
           test -f package-lock.json
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           # Same major as Vercel: read from engines.node ("22.x").
           node-version-file: package.json
@@ -44,7 +44,7 @@ jobs:
           SKIP_PREFLIGHT_CHECK: "true"
           GENERATE_SOURCEMAP: "false"
       - name: Upload build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: build
           path: build
@@ -54,9 +54,9 @@ jobs:
     # Dead links in the README, CV and site sources fail the run (config: lychee.toml).
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Restore lychee cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .lycheecache
           key: lychee-${{ github.sha }}
@@ -77,12 +77,12 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version-file: package.json
       - name: Download build
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: build
           path: build
@@ -90,7 +90,7 @@ jobs:
         run: npx --yes @lhci/cli@0.15.1 autorun
       - name: Upload Lighthouse reports
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lighthouse-reports
           path: .lighthouseci/reports
