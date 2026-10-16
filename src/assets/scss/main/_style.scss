@@ -333,6 +333,9 @@
     .theme-light & {
       border: 5px solid $px-theme;
     }
+    img {
+      height: auto;
+    }
   }
   .img {
     position: relative;

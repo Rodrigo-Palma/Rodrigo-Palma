@@ -47,7 +47,11 @@ const Awards = () => {
           >
             <div className="feature-box-02 d-flex align-items-center">
               <div className="icon">
-                <img src={`img/award/${val.img}.jpeg`} alt="award" />
+                <img
+                  src={`img/award/${val.img}.jpeg`}
+                  alt="award"
+                  loading="lazy"
+                />
               </div>
               <div className="media-body">
                 <h3>{val.awardName}</h3>

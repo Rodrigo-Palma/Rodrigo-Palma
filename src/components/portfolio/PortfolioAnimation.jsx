@@ -66,6 +66,7 @@ const PortfolioAnimation = () => {
                                 alt={val.alt}
                                 width={val.width}
                                 height={val.height}
+                                loading="lazy"
                                 ref={ref}
                               />
                             </button>

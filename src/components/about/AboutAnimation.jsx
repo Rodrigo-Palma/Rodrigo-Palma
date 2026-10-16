@@ -18,7 +18,13 @@ const About = () => {
               <div className="about-me">
                 <div className="img">
                   <div className="img-in">
-                    <img src="img/about/about-me.jpg" alt="about" />
+                    <img
+                      src="img/about/about-me.webp"
+                      alt="Rodrigo Palma"
+                      width="712"
+                      height="712"
+                      loading="lazy"
+                    />
                   </div>
 
                   <Social />

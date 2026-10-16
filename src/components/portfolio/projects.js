@@ -14,7 +14,7 @@ export const projects = [
     cats: ["AI / GenAI"],
   },
   {
-    img: "/img/portfolio/quantlens.png",
+    img: "/img/portfolio/quantlens.webp",
     width: 1200,
     height: 675,
     title: "QuantLens — AI Quant Analyst (B3)",
@@ -25,7 +25,7 @@ export const projects = [
     cats: ["AI / GenAI"],
   },
   {
-    img: "/img/portfolio/anchora.png",
+    img: "/img/portfolio/anchora.webp",
     width: 1200,
     height: 675,
     title: "anchora — Offline RAG for Brazilian Public-Law",
@@ -36,7 +36,7 @@ export const projects = [
     cats: ["AI / GenAI"],
   },
   {
-    img: "/img/portfolio/market-elt.png",
+    img: "/img/portfolio/market-elt.webp",
     width: 1200,
     height: 675,
     title: "market-elt — DuckDB + dbt ELT",
