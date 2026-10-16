@@ -1,0 +1,7 @@
+{
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/portfolio/?", "headers": { "cache-control": "s-maxage=0" }, "dest": "/index.html" },
+    { "src": "/.*", "status": 404, "dest": "/404.html" }
+  ]
+}
