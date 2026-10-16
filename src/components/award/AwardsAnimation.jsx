@@ -49,7 +49,7 @@ const Awards = () => {
               <div className="icon">
                 <img
                   src={`img/award/${val.img}.jpeg`}
-                  alt="award"
+                  alt=""
                   loading="lazy"
                 />
               </div>
