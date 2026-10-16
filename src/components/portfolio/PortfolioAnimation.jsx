@@ -4,6 +4,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
 import { FiLink } from "react-icons/fi";
 import Masonry from "react-masonry-css";
+import { projects } from "./projects";
 
 const breakpointColumnsObj = {
   default: 2,
@@ -11,44 +12,6 @@ const breakpointColumnsObj = {
   700: 2,
   500: 1,
 };
-
-// Single source of truth for projects. Each project lists the categories
-// (tabs) it belongs to; the tabs below are derived from this list.
-const projects = [
-  {
-    img: "/img/portfolio/quantlens.png",
-    width: 1200,
-    height: 675,
-    title: "QuantLens — AI Quant Analyst (B3)",
-    subTitle: "Local-first LLM + RAG + evals (Python/FastAPI)",
-    alterText: "AI / GenAI",
-    delayAnimation: "",
-    portfolioLink: "https://github.com/Rodrigo-Palma/quantlens",
-    cats: ["AI / GenAI"],
-  },
-  {
-    img: "/img/portfolio/anchora.png",
-    width: 1200,
-    height: 675,
-    title: "anchora — Offline RAG for Brazilian Public-Law",
-    subTitle: "Cited, domain-grounded answers (local-first)",
-    alterText: "AI / GenAI",
-    delayAnimation: "100",
-    portfolioLink: "https://github.com/Rodrigo-Palma/anchora",
-    cats: ["AI / GenAI"],
-  },
-  {
-    img: "/img/portfolio/market-elt.png",
-    width: 1200,
-    height: 675,
-    title: "market-elt — DuckDB + dbt ELT",
-    subTitle: "Reproducible pipeline + data-quality tests",
-    alterText: "Data Engineering",
-    delayAnimation: "200",
-    portfolioLink: "https://github.com/Rodrigo-Palma/market-elt",
-    cats: ["Data Engineering"],
-  },
-];
 
 const tabList = ["All", "AI / GenAI", "Data Engineering"];
 
@@ -108,7 +71,9 @@ const PortfolioAnimation = () => {
                             <div className="gallery-link">
                               <img
                                 src={val.img}
-                                alt={val.alterText}
+                                alt={val.alt}
+                                width={val.width}
+                                height={val.height}
                                 role="button"
                                 ref={ref}
                                 onClick={open}

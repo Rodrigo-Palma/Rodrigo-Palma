@@ -151,6 +151,7 @@
   }
   img {
     width: 100%;
+    height: auto;
     @include transition(all 0.55s);
   }
   .gallery-link {
