@@ -1,7 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const TestimonilContent = [
   {
@@ -79,7 +76,7 @@ function TestimonialCard({ val }) {
       </div>
       <div className="media-body">
         <p>{val.desc}</p>
-        <h6>{val.reviewerName}</h6>
+        <h3>{val.reviewerName}</h3>
         <span>
           {val.link ? (
             <a href={val.link} target="_blank" rel="noopener noreferrer">
@@ -94,66 +91,22 @@ function TestimonialCard({ val }) {
   );
 }
 
-export default function SimpleSlider() {
-  // A single testimonial: render the card directly. react-slick clones a lone
-  // slide (showing it twice) and mismanages the track width, so skip it here.
-  if (TestimonilContent.length === 1) {
-    return (
-      <div className="testimonial-wrapper">
-        <div className="row">
-          <div className="col-lg-6 col-md-9">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay={TestimonilContent[0].delayAnimation}
-            >
-              <TestimonialCard val={TestimonilContent[0]} />
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  const settings = {
-    dots: true,
-    arrow: false,
-    infinite: true,
-    speed: 900,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: false,
-    margin: 30,
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 420,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
+// A static list instead of a carousel: every quote is reachable by keyboard and
+// screen reader, and no hidden clone keeps focusable links behind aria-hidden.
+export default function Testimonials() {
   return (
-    <div className="testimonial-wrapper">
-      <Slider {...settings}>
-        {TestimonilContent.map((val, i) => (
-          <div
-            key={i}
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay={val.delayAnimation}
-          >
-            <TestimonialCard val={val} />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <ul className="testimonial-wrapper row list-unstyled">
+      {TestimonilContent.map((val) => (
+        <li
+          key={val.login}
+          className="col-lg-6"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-delay={val.delayAnimation}
+        >
+          <TestimonialCard val={val} />
+        </li>
+      ))}
+    </ul>
   );
 }

@@ -24,7 +24,6 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-scrollspy": "^3.4.3",
-    "react-slick": "^0.29.0",
     "react-tabs": "^6.0.0",
     "react-text-loop": "^2.3.0",
     "react-tooltip": "^4.2.21",
@@ -33,7 +32,6 @@
     "react-video-tag": "0.0.10",
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.57.1",
-    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
