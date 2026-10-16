@@ -47,7 +47,7 @@ const Footer = () => {
             >
               RSP
             </a>{" "}
-            all right reserved
+            All rights reserved
           </p>
         </div>
         {/* End .col */}
