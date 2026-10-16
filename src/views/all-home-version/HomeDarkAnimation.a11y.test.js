@@ -17,7 +17,10 @@ const headingLevels = (container) =>
 
 test("every link and button has an accessible name", async () => {
   const { container } = renderHome();
-  await waitFor(() => expect(container.querySelector(".portfolio-filter-01")).not.toBeNull());
+  // The gallery is code-split (React.lazy); a cold CI runner can take over 1 s to load it.
+  await waitFor(() => expect(container.querySelector(".portfolio-filter-01")).not.toBeNull(), {
+    timeout: 5000,
+  });
 
   const unnamed = [...screen.getAllByRole("link"), ...screen.getAllByRole("button")]
     .filter((el) => computeAccessibleName(el).trim() === "")
