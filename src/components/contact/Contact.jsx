@@ -1,6 +1,3 @@
-import React from "react";
-import { useForm } from "react-hook-form";
-
-const Contact = () => {};
+const Contact = () => null;
 
 export default Contact;
