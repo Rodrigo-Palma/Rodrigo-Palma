@@ -113,3 +113,5 @@ Proven in the repositories above: Python, SQL, PyTorch, FastAPI, dbt, DuckDB, Po
 GitHub Actions, Ollama, LoRA fine-tuning.
 
 Used at work, where the code is not public: Spark, Airflow, Kubernetes, Terraform, AWS, Azure.
+
+[dead](https://github.com/Rodrigo-Palma/this-repo-does-not-exist-ghp10)
