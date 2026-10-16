@@ -1,5 +1,6 @@
 import React from "react";
 import TextLoop from "react-text-loop";
+import usePrefersReducedMotion from "../usePrefersReducedMotion";
 
 const conctInfo = {
   phone: "+55 53-99957-7605",
@@ -14,6 +15,34 @@ const sliderContent = {
   Azure Data Scientist (DP-100) & Microsoft Fabric (DP-600) certified. Open to remote AI / Data Engineering
   roles worldwide.`,
   btnText: "Download CV",
+};
+
+const ROLE_PHRASES = [
+  "AI Engineer",
+  "LLM / RAG & MLOps",
+  "Data Engineer",
+  "Azure Data Scientist (DP-100)",
+];
+
+// The rotating phrases never stop on their own (WCAG 2.2.2), so under
+// reduced motion they are shown together as a single static line.
+const RolePhrases = () => {
+  const isReducedMotion = usePrefersReducedMotion();
+
+  if (isReducedMotion) {
+    return <p className="loop-text lead">{ROLE_PHRASES.join(" · ")}</p>;
+  }
+
+  return (
+    <TextLoop>
+      {ROLE_PHRASES.map((phrase) => (
+        <p className="loop-text lead" key={phrase}>
+          {" "}
+          {phrase}
+        </p>
+      ))}
+    </TextLoop>
+  );
 };
 
 const Slider = () => {
@@ -49,12 +78,7 @@ const Slider = () => {
                   data-aos-duration="1200"
                   data-aos-delay="200"
                 >
-                  <TextLoop>
-                    <p className="loop-text lead"> AI Engineer</p>
-                    <p className="loop-text lead"> LLM / RAG &amp; MLOps</p>
-                    <p className="loop-text lead"> Data Engineer</p>
-                    <p className="loop-text lead"> Azure Data Scientist (DP-100)</p>
-                  </TextLoop>
+                  <RolePhrases />
                 </div>
 
                 <p
