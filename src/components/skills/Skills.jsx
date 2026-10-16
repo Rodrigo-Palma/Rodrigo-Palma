@@ -1,6 +1,6 @@
 import React from "react";
 
-// Recruiter-friendly: grouped skills, no self-assigned proficiency scores or bars.
+// Grouped skills, no self-assigned proficiency scores or bars.
 const skillGroups = [
   {
     title: "AI / GenAI",
