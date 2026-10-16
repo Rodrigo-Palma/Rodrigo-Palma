@@ -13,7 +13,7 @@ const resolve = (url) => {
   const match = (list) => list.find((r) => new RegExp(`^${r.src}$`).test(url));
   const file = url === "/" ? "/index.html" : url;
 
-  const before = match(routes.slice(0, fsIndex));
+  const before = match(routes.slice(0, fsIndex).filter((r) => !r.continue));
   if (before) {
     const location = before.headers && before.headers.Location;
     return location
@@ -56,4 +56,15 @@ test("the static 404 page is accessible and links back to the portfolio", () => 
   expect(html).toMatch(/<meta name="robots" content="noindex" \/>/);
   expect(html).toMatch(/<h1>[^<]*404[^<]*<\/h1>/);
   expect(html).toContain('<a href="/">');
+});
+
+test("hashed bundles under /static are cached by the browser for a year", () => {
+  const { routes } = JSON.parse(fs.readFileSync(configPath, "utf8"));
+  const fsIndex = routes.findIndex((r) => r.handle === "filesystem");
+  const rule = routes
+    .slice(0, fsIndex)
+    .find((r) => new RegExp(`^${r.src}$`).test("/static/js/main.abc123.js"));
+
+  expect(rule.continue).toBe(true);
+  expect(rule.headers["cache-control"]).toBe("public, max-age=31536000, immutable");
 });
