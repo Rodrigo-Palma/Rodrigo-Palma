@@ -109,7 +109,7 @@ certified in DP-100 (Azure Data Scientist) and DP-600 (Fabric Analytics Engineer
 
 ### Stack
 
-Proven in the repositories above: Python, SQL, PyTorch, FastAPI, dbt, DuckDB, Polars, Docker,
+Proven in the repositories above: Python, SQL, PyTorch, FastAPI, dbt, DuckDB, Docker,
 GitHub Actions, Ollama, LoRA fine-tuning.
 
 Used at work, where the code is not public: Spark, Airflow, Kubernetes, Terraform, AWS, Azure.
