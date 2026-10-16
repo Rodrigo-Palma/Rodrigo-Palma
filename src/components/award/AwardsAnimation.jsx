@@ -25,12 +25,6 @@ const AwardContnet = [
     awardFor: "by Project Management Institute",
     delayAnimation: "450",
   },
-  //{
-  //  img: "dscp",
-  //  awardName:"Data Scientist Certified Professional - DSCP",
-  //  awardFor: "by Data Science Academy",
-  //  delayAnimation: "600",
-  //},
 ];
 
 const Awards = () => {
