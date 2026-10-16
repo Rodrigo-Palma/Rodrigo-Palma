@@ -59,3 +59,26 @@ test("testimonials render as a static list with no carousel clones", () => {
   expect(container.querySelector(".slick-slider")).toBeNull();
   expect(screen.getAllByRole("heading", { name: "Thomas Kemmer" })).toHaveLength(1);
 });
+
+test("the content sits in one main landmark that a skip link reaches first", () => {
+  const { container } = renderHome();
+
+  const main = screen.getByRole("main");
+  const firstLink = container.querySelector("a");
+
+  expect(main.id).toBe("main");
+  expect(firstLink.getAttribute("href")).toBe("#main");
+  expect(firstLink.textContent).toBe("Skip to content");
+  expect(screen.getByRole("banner").contains(main)).toBe(false);
+});
+
+test("no heading repeats the H1 text", () => {
+  renderHome();
+
+  const h1 = screen.getByRole("heading", { level: 1 }).textContent.trim();
+  const repeats = screen
+    .getAllByRole("heading")
+    .filter((el) => el.tagName !== "H1" && el.textContent.trim() === h1);
+
+  expect(repeats).toEqual([]);
+});

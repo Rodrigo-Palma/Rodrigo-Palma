@@ -14,67 +14,72 @@ const HomeOne = () => {
   useDocumentTitle("Rodrigo Palma — Senior Data & AI Engineer");
   return (
     <div className="main-left theme-dark">
+      <a className="skip-link visually-hidden-focusable" href="#main">
+        Skip to content
+      </a>
       <Header />
       {/* End Header Section */}
 
-      <Slider />
-      {/* End Slider Section */}
+      <main id="main" tabIndex={-1}>
+        <Slider />
+        {/* End Slider Section */}
 
-      <About />
-      {/* End About Section */}
+        <About />
+        {/* End About Section */}
 
-      <Resume />
-      {/* End Resume Section */}
+        <Resume />
+        {/* End Resume Section */}
 
-      <section id="work" className="section theme-light dark-bg">
-        <div className="container">
-          <div className="title">
-            <h2>Projects</h2>
-          </div>
-          <Portfolio />
-        </div>
-      </section>
-      {/* End Portfolio Section */}
-
-      <section id="contactus" className="section theme-light dark-bg">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-lg-5 col-xl-4 m-15px-tb"
-              data-aos="fade-right"
-              data-aos-duration="1200"
-            >
-              <ContactInfo />
+        <section id="work" className="section theme-light dark-bg">
+          <div className="container">
+            <div className="title">
+              <h2>Projects</h2>
             </div>
-            {/* End Contact info */}
+            <Portfolio />
+          </div>
+        </section>
+        {/* End Portfolio Section */}
 
-            <div
-              className="col-lg-7 ml-auto m-15px-tb"
-              data-aos="fade-right"
-              data-aos-duration="1200"
-              data-aos-delay="200"
-            >
-              <div className="contact-form">
-              {/*  <h4>Deixe Sua Mensagem</h4> */}
-                <Contact />
+        <section id="contactus" className="section theme-light dark-bg">
+          <div className="container">
+            <div className="row">
+              <div
+                className="col-lg-5 col-xl-4 m-15px-tb"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              >
+                <ContactInfo />
               </div>
-            </div>
-            {/* End contact form */}
+              {/* End Contact info */}
 
-            <div
-              className="col-12"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay="300"
-            >
-              <Map />
-              {/* End google-map */}
+              <div
+                className="col-lg-7 ml-auto m-15px-tb"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                data-aos-delay="200"
+              >
+                <div className="contact-form">
+                {/*  <h4>Deixe Sua Mensagem</h4> */}
+                  <Contact />
+                </div>
+              </div>
+              {/* End contact form */}
+
+              <div
+                className="col-12"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+              >
+                <Map />
+                {/* End google-map */}
+              </div>
+              {/* End Col */}
             </div>
-            {/* End Col */}
           </div>
-        </div>
-      </section>
-      {/* End Contact Section */}
+        </section>
+        {/* End Contact Section */}
+      </main>
 
       <footer className="footer white">
         <div className="container">

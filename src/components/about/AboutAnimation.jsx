@@ -34,7 +34,7 @@ const About = () => {
                 {/* End img */}
                 <div className="info">
                   <p>AI Engineer</p>
-                  <h2>Rodrigo Palma</h2>
+                  <p className="info-name">Rodrigo Palma</p>
                 </div>
                 {/* End info */}
               </div>

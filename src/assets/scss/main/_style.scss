@@ -356,6 +356,12 @@
       margin: 0;
       font-size: 16px;
     }
+    .info-name {
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 1.2;
+    }
   }
   .social-icons {
     position: absolute;
@@ -951,4 +957,25 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+}
+
+/* Skip link
+-----------------------------------*/
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10000;
+  padding: 10px 16px;
+  background: $px-white;
+  color: $px-dark;
+  font-weight: 600;
+  &:focus {
+    outline: 2px solid $px-theme;
+    outline-offset: 2px;
+  }
+}
+
+#main:focus {
+  outline: none;
 }
