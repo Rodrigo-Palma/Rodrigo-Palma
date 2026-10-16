@@ -90,3 +90,13 @@ test("sitemap.xml lists the canonical URL", () => {
   expect(sitemap).toContain(`<loc>${SITE}/</loc>`);
   expect(indexHtml).toContain(`<link rel="canonical" href="${SITE}/" />`);
 });
+
+test("the infinite title animation stops under prefers-reduced-motion", () => {
+  const animation = read(root, "src/assets/scss/main/_animation.scss");
+  const style = read(root, "src/assets/scss/main/_style.scss");
+
+  expect(animation).toMatch(
+    /@media \(prefers-reduced-motion: reduce\) \{[\s\S]*?\.title h2:after,[\s\S]*?animation: none;/
+  );
+  expect(animation + style).not.toMatch(/slide-both-sidee/);
+});

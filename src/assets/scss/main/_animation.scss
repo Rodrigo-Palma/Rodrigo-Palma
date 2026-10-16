@@ -1,5 +1,4 @@
 .slide-both-side {
-  -webkit-animation: slide-both-sidee 4s infinite both;
   animation: slide-both-side 4s infinite both;
 }
 
@@ -52,4 +51,16 @@
   padding: 1px 8px !important;
   text-transform: capitalize !important;
   font-weight: 400 !important;
+}
+
+// Decorative loops stop for visitors who ask for reduced motion.
+@media (prefers-reduced-motion: reduce) {
+  .slide-both-side,
+  .slideTop,
+  .title h2:after,
+  .title h3:after,
+  .go-to-next a {
+    -webkit-animation: none;
+    animation: none;
+  }
 }
