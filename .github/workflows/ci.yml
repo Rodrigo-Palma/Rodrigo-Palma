@@ -11,10 +11,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Single lockfile
+        # Vercel installs with npm, so package-lock.json is the only lockfile.
+        run: |
+          for f in bun.lock bun.lockb yarn.lock pnpm-lock.yaml; do
+            if [ -e "$f" ]; then
+              echo "::error::$f found; npm (package-lock.json) is the only package manager"
+              exit 1
+            fi
+          done
+          test -f package-lock.json
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # Same major as Vercel: read from engines.node ("22.x").
+          node-version-file: package.json
           cache: npm
+      - name: Node version
+        run: node --version | grep -q '^v22\.'
       - name: Install dependencies
         # react-text-loop pins a pre-18 React peer range; the app itself runs on 18.
         run: npm ci --legacy-peer-deps
