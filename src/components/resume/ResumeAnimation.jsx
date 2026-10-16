@@ -14,7 +14,7 @@ const resumeContent = [
     it does, each with a regression test.`,
   },
   {
-    jobPosition: `Data & AI Engineer`,
+    jobPosition: `Senior Data & AI Engineer`,
     jobType: `On-site | Remote`,
     jobDuration: `2024 - Present`,
     timeDuraton: `Full-time`,

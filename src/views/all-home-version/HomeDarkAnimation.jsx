@@ -11,7 +11,7 @@ import Footer from "../../components/footer/FooterAnimation";
 import useDocumentTitle from "../../components/useDocumentTitle";
 
 const HomeOne = () => {
-  useDocumentTitle("Rodrigo Palma — AI Engineer");
+  useDocumentTitle("Rodrigo Palma — Senior Data & AI Engineer");
   return (
     <div className="main-left theme-dark">
       <Header />
