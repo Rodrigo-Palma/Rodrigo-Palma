@@ -100,3 +100,23 @@ test("the infinite title animation stops under prefers-reduced-motion", () => {
   );
   expect(animation + style).not.toMatch(/slide-both-sidee/);
 });
+
+test("certification badges are small WebPs with intrinsic size", () => {
+  const awards = read(root, "src/components/award/AwardsAnimation.jsx");
+
+  expect(awards).toMatch(/src=\{`img\/award\/\$\{val\.img\}\.webp`\}/);
+  expect(awards).toMatch(/width=\{val\.width\}\s+height=\{val\.height\}/);
+  ["dp100", "dp600", "pl300", "capm"].forEach((name) => {
+    expect(fs.statSync(path.join(publicDir, `img/award/${name}.webp`)).size).toBeLessThan(10 * 1024);
+  });
+});
+
+test("reviewer avatars declare their size and load lazily", () => {
+  const testimonial = read(root, "src/components/testimonial/TestimonialAnimation.jsx");
+
+  expect(testimonial).toMatch(/<img[^>]+width=\{100\}\s+height=\{100\}\s+loading="lazy"/);
+});
+
+test("the et-line icon font does not block text with an invisible period", () => {
+  expect(read(root, "src/assets/scss/_et-line-font.scss")).toMatch(/font-display: swap;/);
+});

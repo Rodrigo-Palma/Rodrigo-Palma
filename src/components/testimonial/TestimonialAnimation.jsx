@@ -53,6 +53,9 @@ function TestimonialCard({ val }) {
           <img
             src={`https://github.com/${val.login}.png?size=120`}
             alt={val.reviewerName}
+            width={100}
+            height={100}
+            loading="lazy"
           ></img>
         ) : (
           <div
