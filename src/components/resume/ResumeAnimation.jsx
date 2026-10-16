@@ -8,9 +8,9 @@ const resumeContent = [
     jobDuration: `2026 - Present`,
     timeDuraton: `Part-time`,
     compnayName: "Upstream Python data and AI tooling",
-    jobDescription: `49 pull requests merged across 20 projects, including great-tables,
-    fsspec, Apache Iceberg (iceberg-python), Delta Lake (delta-rs), tox, kedro, feast,
-    Pillow and polars. Bug fixes found by checking what a function promises against what
+    jobDescription: `More than 75 pull requests merged in 28 projects, including great-tables,
+    fsspec, tox, kedro, feast, Apache Iceberg (iceberg-python), Delta Lake (delta-rs),
+    urllib3, Pillow and polars. Bug fixes found by checking what a function promises against what
     it does, each with a regression test.`,
   },
   {
